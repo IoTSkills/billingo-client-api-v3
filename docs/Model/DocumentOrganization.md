@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  | [optional] 
 **tax_number** | **string** |  | [optional] 
-**bank_account** | [**\Swagger\Client\Model\DocumentBankAccount**](DocumentBankAccount.md) |  | [optional] 
-**address** | [**\Swagger\Client\Model\Address**](Address.md) |  | [optional] 
+**bank_account** | [**\BillingoClientAPIv3\Client\Model\DocumentBankAccount**](DocumentBankAccount.md) |  | [optional] 
+**address** | [**\BillingoClientAPIv3\Client\Model\Address**](Address.md) |  | [optional] 
 **small_taxpayer** | **bool** |  | [optional] 
 **ev_number** | **string** |  | [optional] 
 **eu_tax_number** | **string** |  | [optional] 

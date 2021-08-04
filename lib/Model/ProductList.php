@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * ProductList Class Doc Comment
@@ -57,7 +57,7 @@ class ProductList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\Product[]',
+        'data' => '\BillingoClientAPIv3\Client\Model\Product[]',
 'total' => 'int',
 'per_page' => 'int',
 'current_page' => 'int',
@@ -236,7 +236,7 @@ class ProductList implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\Product[]
+     * @return \BillingoClientAPIv3\Client\Model\Product[]
      */
     public function getData()
     {
@@ -246,7 +246,7 @@ class ProductList implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\Product[] $data data
+     * @param \BillingoClientAPIv3\Client\Model\Product[] $data data
      *
      * @return $this
      */

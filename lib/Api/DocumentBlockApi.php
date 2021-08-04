@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -94,9 +94,9 @@ class DocumentBlockApi
      * @param  int $page page (optional)
      * @param  int $per_page per_page (optional, default to 25)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DocumentBlockList
+     * @return \BillingoClientAPIv3\Client\Model\DocumentBlockList
      */
     public function listDocumentBlock($page = null, $per_page = '25')
     {
@@ -112,13 +112,13 @@ class DocumentBlockApi
      * @param  int $page (optional)
      * @param  int $per_page (optional, default to 25)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DocumentBlockList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\DocumentBlockList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listDocumentBlockWithHttpInfo($page = null, $per_page = '25')
     {
-        $returnType = '\Swagger\Client\Model\DocumentBlockList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentBlockList';
         $request = $this->listDocumentBlockRequest($page, $per_page);
 
         try {
@@ -170,7 +170,7 @@ class DocumentBlockApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DocumentBlockList',
+                        '\BillingoClientAPIv3\Client\Model\DocumentBlockList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -178,7 +178,7 @@ class DocumentBlockApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class DocumentBlockApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -194,7 +194,7 @@ class DocumentBlockApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -202,7 +202,7 @@ class DocumentBlockApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -210,7 +210,7 @@ class DocumentBlockApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class DocumentBlockApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -262,7 +262,7 @@ class DocumentBlockApi
      */
     public function listDocumentBlockAsyncWithHttpInfo($page = null, $per_page = '25')
     {
-        $returnType = '\Swagger\Client\Model\DocumentBlockList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentBlockList';
         $request = $this->listDocumentBlockRequest($page, $per_page);
 
         return $this->client

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * TaxNumber Class Doc Comment
@@ -57,7 +57,7 @@ class TaxNumber implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'tax_number' => 'string',
-'result' => '\Swagger\Client\Model\CheckTaxNumberMessage'    ];
+'result' => '\BillingoClientAPIv3\Client\Model\CheckTaxNumberMessage'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +229,7 @@ class TaxNumber implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \Swagger\Client\Model\CheckTaxNumberMessage
+     * @return \BillingoClientAPIv3\Client\Model\CheckTaxNumberMessage
      */
     public function getResult()
     {
@@ -239,7 +239,7 @@ class TaxNumber implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \Swagger\Client\Model\CheckTaxNumberMessage $result result
+     * @param \BillingoClientAPIv3\Client\Model\CheckTaxNumberMessage $result result
      *
      * @return $this
      */

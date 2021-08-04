@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **date** | [**\DateTime**](\DateTime.md) |  | 
 **price** | **float** |  | 
-**payment_method** | [**\Swagger\Client\Model\PaymentMethod**](PaymentMethod.md) |  | 
+**payment_method** | [**\BillingoClientAPIv3\Client\Model\PaymentMethod**](PaymentMethod.md) |  | 
 **voucher_number** | **string** |  | [optional] 
 **conversion_rate** | **float** |  | [optional] 
 

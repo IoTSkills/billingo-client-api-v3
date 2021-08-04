@@ -62,13 +62,13 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BankAccountApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\BankAccount(); // \Swagger\Client\Model\BankAccount | BankAccount object that you would like to store.
+$body = new \BillingoClientAPIv3\Client\Model\BankAccount(); // \BillingoClientAPIv3\Client\Model\BankAccount | BankAccount object that you would like to store.
 
 try {
     $result = $apiInstance->createBankAccount($body);
@@ -82,7 +82,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BankAccountApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -101,7 +101,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BankAccountApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -121,7 +121,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BankAccountApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -142,13 +142,13 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\BankAccountApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\BankAccount(); // \Swagger\Client\Model\BankAccount | Bank account object that you would like to update.
+$body = new \BillingoClientAPIv3\Client\Model\BankAccount(); // \BillingoClientAPIv3\Client\Model\BankAccount | Bank account object that you would like to update.
 $id = 56; // int | 
 
 try {

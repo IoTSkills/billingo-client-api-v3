@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * BankAccountList Class Doc Comment
@@ -57,7 +57,7 @@ class BankAccountList implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Swagger\Client\Model\BankAccount[]',
+        'data' => '\BillingoClientAPIv3\Client\Model\BankAccount[]',
 'total' => 'int',
 'per_page' => 'int',
 'current_page' => 'int',
@@ -236,7 +236,7 @@ class BankAccountList implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \Swagger\Client\Model\BankAccount[]
+     * @return \BillingoClientAPIv3\Client\Model\BankAccount[]
      */
     public function getData()
     {
@@ -246,7 +246,7 @@ class BankAccountList implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \Swagger\Client\Model\BankAccount[] $data data
+     * @param \BillingoClientAPIv3\Client\Model\BankAccount[] $data data
      *
      * @return $this
      */

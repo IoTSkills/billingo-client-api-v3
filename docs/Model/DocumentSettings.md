@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **mediated_service** | **bool** |  | [optional] [default to false]
 **without_financial_fulfillment** | **bool** |  | [optional] [default to false]
-**online_payment** | [**\Swagger\Client\Model\OnlinePayment**](OnlinePayment.md) |  | [optional] 
-**round** | [**\Swagger\Client\Model\Round**](Round.md) |  | [optional] 
+**online_payment** | [**\BillingoClientAPIv3\Client\Model\OnlinePayment**](OnlinePayment.md) |  | [optional] 
+**round** | [**\BillingoClientAPIv3\Client\Model\Round**](Round.md) |  | [optional] 
 **order_number** | **string** |  | [optional] 
 **place_id** | **int** |  | [optional] 
 

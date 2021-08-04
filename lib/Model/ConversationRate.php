@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * ConversationRate Class Doc Comment
@@ -56,8 +56,8 @@ class ConversationRate implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'from_currency' => '\Swagger\Client\Model\Currency',
-'to_currency' => '\Swagger\Client\Model\Currency',
+        'from_currency' => '\BillingoClientAPIv3\Client\Model\Currency',
+'to_currency' => '\BillingoClientAPIv3\Client\Model\Currency',
 'conversation_rate' => 'float',
 'date' => '\DateTime'    ];
 
@@ -217,7 +217,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Gets from_currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \BillingoClientAPIv3\Client\Model\Currency
      */
     public function getFromCurrency()
     {
@@ -227,7 +227,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Sets from_currency
      *
-     * @param \Swagger\Client\Model\Currency $from_currency from_currency
+     * @param \BillingoClientAPIv3\Client\Model\Currency $from_currency from_currency
      *
      * @return $this
      */
@@ -241,7 +241,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Gets to_currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \BillingoClientAPIv3\Client\Model\Currency
      */
     public function getToCurrency()
     {
@@ -251,7 +251,7 @@ class ConversationRate implements ModelInterface, ArrayAccess
     /**
      * Sets to_currency
      *
-     * @param \Swagger\Client\Model\Currency $to_currency to_currency
+     * @param \BillingoClientAPIv3\Client\Model\Currency $to_currency to_currency
      *
      * @return $this
      */

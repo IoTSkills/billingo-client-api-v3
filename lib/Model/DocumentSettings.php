@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * DocumentSettings Class Doc Comment
@@ -58,8 +58,8 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'mediated_service' => 'bool',
 'without_financial_fulfillment' => 'bool',
-'online_payment' => '\Swagger\Client\Model\OnlinePayment',
-'round' => '\Swagger\Client\Model\Round',
+'online_payment' => '\BillingoClientAPIv3\Client\Model\OnlinePayment',
+'round' => '\BillingoClientAPIv3\Client\Model\Round',
 'order_number' => 'string',
 'place_id' => 'int'    ];
 
@@ -277,7 +277,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Gets online_payment
      *
-     * @return \Swagger\Client\Model\OnlinePayment
+     * @return \BillingoClientAPIv3\Client\Model\OnlinePayment
      */
     public function getOnlinePayment()
     {
@@ -287,7 +287,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Sets online_payment
      *
-     * @param \Swagger\Client\Model\OnlinePayment $online_payment online_payment
+     * @param \BillingoClientAPIv3\Client\Model\OnlinePayment $online_payment online_payment
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Gets round
      *
-     * @return \Swagger\Client\Model\Round
+     * @return \BillingoClientAPIv3\Client\Model\Round
      */
     public function getRound()
     {
@@ -311,7 +311,7 @@ class DocumentSettings implements ModelInterface, ArrayAccess
     /**
      * Sets round
      *
-     * @param \Swagger\Client\Model\Round $round round
+     * @param \BillingoClientAPIv3\Client\Model\Round $round round
      *
      * @return $this
      */

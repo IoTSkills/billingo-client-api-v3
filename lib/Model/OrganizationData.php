@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * OrganizationData Class Doc Comment
@@ -57,7 +57,7 @@ class OrganizationData implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'tax_code' => 'string',
-'subscription' => '\Swagger\Client\Model\Subscription'    ];
+'subscription' => '\BillingoClientAPIv3\Client\Model\Subscription'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +229,7 @@ class OrganizationData implements ModelInterface, ArrayAccess
     /**
      * Gets subscription
      *
-     * @return \Swagger\Client\Model\Subscription
+     * @return \BillingoClientAPIv3\Client\Model\Subscription
      */
     public function getSubscription()
     {
@@ -239,7 +239,7 @@ class OrganizationData implements ModelInterface, ArrayAccess
     /**
      * Sets subscription
      *
-     * @param \Swagger\Client\Model\Subscription $subscription subscription
+     * @param \BillingoClientAPIv3\Client\Model\Subscription $subscription subscription
      *
      * @return $this
      */

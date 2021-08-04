@@ -26,10 +26,11 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * ValidationErrorResponse Class Doc Comment
@@ -57,7 +58,7 @@ class ValidationErrorResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'message' => 'string',
-'errors' => '\Swagger\Client\Model\ValidationError[]'    ];
+'errors' => '\BillingoClientAPIv3\Client\Model\ValidationError[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +230,7 @@ class ValidationErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Gets errors
      *
-     * @return \Swagger\Client\Model\ValidationError[]
+     * @return \BillingoClientAPIv3\Client\Model\ValidationError[]
      */
     public function getErrors()
     {
@@ -239,7 +240,7 @@ class ValidationErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Sets errors
      *
-     * @param \Swagger\Client\Model\ValidationError[] $errors errors
+     * @param \BillingoClientAPIv3\Client\Model\ValidationError[] $errors errors
      *
      * @return $this
      */

@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Swagger\Client\Model\DocumentBlock[]**](DocumentBlock.md) |  | [optional] 
+**data** | [**\BillingoClientAPIv3\Client\Model\DocumentBlock[]**](DocumentBlock.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **per_page** | **int** |  | [optional] 
 **current_page** | **int** |  | [optional] 

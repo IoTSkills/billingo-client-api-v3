@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tensoft_vkod** | **string** |  | [optional] 
-**ledger_number** | [**\Swagger\Client\Model\LedgerNumberInformation**](LedgerNumberInformation.md) |  | [optional] 
+**ledger_number** | [**\BillingoClientAPIv3\Client\Model\LedgerNumberInformation**](LedgerNumberInformation.md) |  | [optional] 
 **forintsoft_konyvelesi_naplo_szam** | **string** |  | [optional] 
 **positive_ledger_number** | **string** |  | [optional] 
 **negative_ledger_number** | **string** |  | [optional] 

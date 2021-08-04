@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**data** | [**\Swagger\Client\Model\Product[]**](Product.md) |  | [optional] 
+**data** | [**\BillingoClientAPIv3\Client\Model\Product[]**](Product.md) |  | [optional] 
 **total** | **int** |  | [optional] 
 **per_page** | **int** |  | [optional] 
 **current_page** | **int** |  | [optional] 

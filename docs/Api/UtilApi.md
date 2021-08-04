@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**getId**](UtilApi.md#getid) | **GET** /utils/convert-legacy-id/{id} | Convert legacy ID to v3 ID.
 
 # **checkTaxNumber**
-> \Swagger\Client\Model\TaxNumber checkTaxNumber($tax_number)
+> \BillingoClientAPIv3\Client\Model\TaxNumber checkTaxNumber($tax_number)
 
 Check tax number.
 
@@ -23,7 +23,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\UtilApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\UtilApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\TaxNumber**](../Model/TaxNumber.md)
+[**\BillingoClientAPIv3\Client\Model\TaxNumber**](../Model/TaxNumber.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getId**
-> \Swagger\Client\Model\Id getId($id)
+> \BillingoClientAPIv3\Client\Model\Id getId($id)
 
 Convert legacy ID to v3 ID.
 
@@ -77,7 +77,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\UtilApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\UtilApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Id**](../Model/Id.md)
+[**\BillingoClientAPIv3\Client\Model\Id**](../Model/Id.md)
 
 ### Authorization
 

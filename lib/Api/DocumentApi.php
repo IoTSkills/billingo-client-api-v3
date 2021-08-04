@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -93,7 +93,7 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -109,7 +109,7 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -153,7 +153,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -161,7 +161,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -169,7 +169,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -177,7 +177,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -185,7 +185,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -193,7 +193,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -201,7 +201,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -209,7 +209,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -387,9 +387,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Document
+     * @return \BillingoClientAPIv3\Client\Model\Document
      */
     public function cancelDocument($id)
     {
@@ -404,13 +404,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelDocumentWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->cancelDocumentRequest($id);
 
         try {
@@ -462,7 +462,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Document',
+                        '\BillingoClientAPIv3\Client\Model\Document',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -470,7 +470,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -478,7 +478,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -486,7 +486,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -494,7 +494,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -568,7 +568,7 @@ class DocumentApi
      */
     public function cancelDocumentAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->cancelDocumentRequest($id);
 
         return $this->client
@@ -716,11 +716,11 @@ class DocumentApi
      *
      * Create a document
      *
-     * @param  \Swagger\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Document
+     * @return \BillingoClientAPIv3\Client\Model\Document
      */
     public function createDocument($body)
     {
@@ -733,15 +733,15 @@ class DocumentApi
      *
      * Create a document
      *
-     * @param  \Swagger\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDocumentWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->createDocumentRequest($body);
 
         try {
@@ -793,7 +793,7 @@ class DocumentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Document',
+                        '\BillingoClientAPIv3\Client\Model\Document',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -801,7 +801,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -809,7 +809,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -817,7 +817,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -825,7 +825,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -833,7 +833,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -841,7 +841,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -849,7 +849,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -864,7 +864,7 @@ class DocumentApi
      *
      * Create a document
      *
-     * @param  \Swagger\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -884,14 +884,14 @@ class DocumentApi
      *
      * Create a document
      *
-     * @param  \Swagger\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createDocumentAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->createDocumentRequest($body);
 
         return $this->client
@@ -934,7 +934,7 @@ class DocumentApi
     /**
      * Create request for operation 'createDocument'
      *
-     * @param  \Swagger\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentInsert $body DocumentInsert object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1036,9 +1036,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Document
+     * @return \BillingoClientAPIv3\Client\Model\Document
      */
     public function createDocumentFromProforma($id)
     {
@@ -1053,13 +1053,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
      */
     public function createDocumentFromProformaWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->createDocumentFromProformaRequest($id);
 
         try {
@@ -1111,7 +1111,7 @@ class DocumentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Document',
+                        '\BillingoClientAPIv3\Client\Model\Document',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1119,7 +1119,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1127,7 +1127,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1135,7 +1135,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1143,7 +1143,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1151,7 +1151,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1159,7 +1159,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1167,7 +1167,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1175,7 +1175,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1217,7 +1217,7 @@ class DocumentApi
      */
     public function createDocumentFromProformaAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->createDocumentFromProformaRequest($id);
 
         return $this->client
@@ -1365,12 +1365,12 @@ class DocumentApi
      *
      * Create a modification document.
      *
-     * @param  \Swagger\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Document
+     * @return \BillingoClientAPIv3\Client\Model\Document
      */
     public function createModificationDocument($body, $id)
     {
@@ -1383,16 +1383,16 @@ class DocumentApi
      *
      * Create a modification document.
      *
-     * @param  \Swagger\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
      */
     public function createModificationDocumentWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->createModificationDocumentRequest($body, $id);
 
         try {
@@ -1444,7 +1444,7 @@ class DocumentApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Document',
+                        '\BillingoClientAPIv3\Client\Model\Document',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1452,7 +1452,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1460,7 +1460,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1468,7 +1468,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1476,7 +1476,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1484,7 +1484,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1492,7 +1492,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1500,7 +1500,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1508,7 +1508,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1523,7 +1523,7 @@ class DocumentApi
      *
      * Create a modification document.
      *
-     * @param  \Swagger\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1544,7 +1544,7 @@ class DocumentApi
      *
      * Create a modification document.
      *
-     * @param  \Swagger\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1552,7 +1552,7 @@ class DocumentApi
      */
     public function createModificationDocumentAsyncWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->createModificationDocumentRequest($body, $id);
 
         return $this->client
@@ -1595,7 +1595,7 @@ class DocumentApi
     /**
      * Create request for operation 'createModificationDocument'
      *
-     * @param  \Swagger\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\ModificationDocumentInsert $body ModificationDocumentInsert object that you would like to store. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1712,7 +1712,7 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1728,7 +1728,7 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1772,7 +1772,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1780,7 +1780,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1788,7 +1788,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1796,7 +1796,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1804,7 +1804,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1812,7 +1812,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1820,7 +1820,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1998,9 +1998,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PaymentHistory[]
+     * @return \BillingoClientAPIv3\Client\Model\PaymentHistory[]
      */
     public function deletePayment($id)
     {
@@ -2015,13 +2015,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PaymentHistory[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\PaymentHistory[], HTTP status code, HTTP response headers (array of strings)
      */
     public function deletePaymentWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\PaymentHistory[]';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PaymentHistory[]';
         $request = $this->deletePaymentRequest($id);
 
         try {
@@ -2073,7 +2073,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PaymentHistory[]',
+                        '\BillingoClientAPIv3\Client\Model\PaymentHistory[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2081,7 +2081,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2089,7 +2089,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2097,7 +2097,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2105,7 +2105,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2113,7 +2113,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2121,7 +2121,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2129,7 +2129,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2171,7 +2171,7 @@ class DocumentApi
      */
     public function deletePaymentAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\PaymentHistory[]';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PaymentHistory[]';
         $request = $this->deletePaymentRequest($id);
 
         return $this->client
@@ -2321,9 +2321,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Document
+     * @return \BillingoClientAPIv3\Client\Model\Document
      */
     public function documentCopy($id)
     {
@@ -2338,13 +2338,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
      */
     public function documentCopyWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->documentCopyRequest($id);
 
         try {
@@ -2396,7 +2396,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Document',
+                        '\BillingoClientAPIv3\Client\Model\Document',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2404,7 +2404,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2412,7 +2412,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2420,7 +2420,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2428,7 +2428,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2436,7 +2436,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2444,7 +2444,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2452,7 +2452,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2460,7 +2460,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2502,7 +2502,7 @@ class DocumentApi
      */
     public function documentCopyAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->documentCopyRequest($id);
 
         return $this->client
@@ -2652,7 +2652,7 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -2669,7 +2669,7 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -2735,7 +2735,7 @@ class DocumentApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientError',
+                        '\BillingoClientAPIv3\Client\Model\ClientError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2743,7 +2743,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2751,7 +2751,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2759,7 +2759,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2767,7 +2767,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2775,7 +2775,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2783,7 +2783,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2791,7 +2791,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2983,9 +2983,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Document
+     * @return \BillingoClientAPIv3\Client\Model\Document
      */
     public function getDocument($id)
     {
@@ -3000,13 +3000,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Document, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDocumentWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->getDocumentRequest($id);
 
         try {
@@ -3058,7 +3058,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Document',
+                        '\BillingoClientAPIv3\Client\Model\Document',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3066,7 +3066,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3074,7 +3074,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3082,7 +3082,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3090,7 +3090,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3098,7 +3098,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3106,7 +3106,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3114,7 +3114,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3156,7 +3156,7 @@ class DocumentApi
      */
     public function getDocumentAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Document';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Document';
         $request = $this->getDocumentRequest($id);
 
         return $this->client
@@ -3306,9 +3306,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OnlineSzamlaStatus
+     * @return \BillingoClientAPIv3\Client\Model\OnlineSzamlaStatus
      */
     public function getOnlineSzamlaStatus($id)
     {
@@ -3323,13 +3323,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OnlineSzamlaStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\OnlineSzamlaStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOnlineSzamlaStatusWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\OnlineSzamlaStatus';
+        $returnType = '\BillingoClientAPIv3\Client\Model\OnlineSzamlaStatus';
         $request = $this->getOnlineSzamlaStatusRequest($id);
 
         try {
@@ -3381,7 +3381,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OnlineSzamlaStatus',
+                        '\BillingoClientAPIv3\Client\Model\OnlineSzamlaStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3389,7 +3389,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3397,7 +3397,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3405,7 +3405,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3413,7 +3413,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3421,7 +3421,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3429,7 +3429,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3437,7 +3437,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3479,7 +3479,7 @@ class DocumentApi
      */
     public function getOnlineSzamlaStatusAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\OnlineSzamlaStatus';
+        $returnType = '\BillingoClientAPIv3\Client\Model\OnlineSzamlaStatus';
         $request = $this->getOnlineSzamlaStatusRequest($id);
 
         return $this->client
@@ -3629,9 +3629,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PaymentHistory[]
+     * @return \BillingoClientAPIv3\Client\Model\PaymentHistory[]
      */
     public function getPayment($id)
     {
@@ -3646,13 +3646,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PaymentHistory[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\PaymentHistory[], HTTP status code, HTTP response headers (array of strings)
      */
     public function getPaymentWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\PaymentHistory[]';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PaymentHistory[]';
         $request = $this->getPaymentRequest($id);
 
         try {
@@ -3704,7 +3704,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PaymentHistory[]',
+                        '\BillingoClientAPIv3\Client\Model\PaymentHistory[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3712,7 +3712,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3720,7 +3720,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3728,7 +3728,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3736,7 +3736,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3744,7 +3744,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3752,7 +3752,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3760,7 +3760,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3802,7 +3802,7 @@ class DocumentApi
      */
     public function getPaymentAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\PaymentHistory[]';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PaymentHistory[]';
         $request = $this->getPaymentRequest($id);
 
         return $this->client
@@ -3952,9 +3952,9 @@ class DocumentApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DocumentPublicUrl
+     * @return \BillingoClientAPIv3\Client\Model\DocumentPublicUrl
      */
     public function getPublicUrl($id)
     {
@@ -3969,13 +3969,13 @@ class DocumentApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DocumentPublicUrl, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\DocumentPublicUrl, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPublicUrlWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DocumentPublicUrl';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentPublicUrl';
         $request = $this->getPublicUrlRequest($id);
 
         try {
@@ -4027,7 +4027,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DocumentPublicUrl',
+                        '\BillingoClientAPIv3\Client\Model\DocumentPublicUrl',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4035,7 +4035,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4043,7 +4043,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4051,7 +4051,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4059,7 +4059,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4067,7 +4067,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4075,7 +4075,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4083,7 +4083,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4125,7 +4125,7 @@ class DocumentApi
      */
     public function getPublicUrlAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DocumentPublicUrl';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentPublicUrl';
         $request = $this->getPublicUrlRequest($id);
 
         return $this->client
@@ -4277,19 +4277,19 @@ class DocumentApi
      * @param  int $per_page per_page (optional, default to 25)
      * @param  int $block_id Filter documents by the identifier of your DocumentBlock. (optional)
      * @param  int $partner_id Filter documents by the identifier of your Partner. (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
-     * @param  \Swagger\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
      * @param  \DateTime $start_date Filter documents by date. (optional)
      * @param  \DateTime $end_date Filter documents by date. (optional)
      * @param  int $start_number Starting number of the document, should not contain year or any other formatting. Required if &#x60;start_year&#x60; given (optional)
      * @param  int $end_number Ending number of the document, should not contain year or any other formatting. Required if &#x60;end_year&#x60; given (optional)
      * @param  int $start_year Year for &#x60;start_number&#x60; parameter. Required if &#x60;start_number&#x60; given. (optional)
      * @param  int $end_year Year for &#x60;end_number&#x60; parameter. Required if &#x60;end_number&#x60; given. (optional)
-     * @param  \Swagger\Client\Model\DocumentType $type Filter documents by type (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentType $type Filter documents by type (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DocumentList
+     * @return \BillingoClientAPIv3\Client\Model\DocumentList
      */
     public function listDocument($page = null, $per_page = '25', $block_id = null, $partner_id = null, $payment_method = null, $payment_status = null, $start_date = null, $end_date = null, $start_number = null, $end_number = null, $start_year = null, $end_year = null, $type = null)
     {
@@ -4306,23 +4306,23 @@ class DocumentApi
      * @param  int $per_page (optional, default to 25)
      * @param  int $block_id Filter documents by the identifier of your DocumentBlock. (optional)
      * @param  int $partner_id Filter documents by the identifier of your Partner. (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
-     * @param  \Swagger\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
      * @param  \DateTime $start_date Filter documents by date. (optional)
      * @param  \DateTime $end_date Filter documents by date. (optional)
      * @param  int $start_number Starting number of the document, should not contain year or any other formatting. Required if &#x60;start_year&#x60; given (optional)
      * @param  int $end_number Ending number of the document, should not contain year or any other formatting. Required if &#x60;end_year&#x60; given (optional)
      * @param  int $start_year Year for &#x60;start_number&#x60; parameter. Required if &#x60;start_number&#x60; given. (optional)
      * @param  int $end_year Year for &#x60;end_number&#x60; parameter. Required if &#x60;end_number&#x60; given. (optional)
-     * @param  \Swagger\Client\Model\DocumentType $type Filter documents by type (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentType $type Filter documents by type (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DocumentList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\DocumentList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listDocumentWithHttpInfo($page = null, $per_page = '25', $block_id = null, $partner_id = null, $payment_method = null, $payment_status = null, $start_date = null, $end_date = null, $start_number = null, $end_number = null, $start_year = null, $end_year = null, $type = null)
     {
-        $returnType = '\Swagger\Client\Model\DocumentList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentList';
         $request = $this->listDocumentRequest($page, $per_page, $block_id, $partner_id, $payment_method, $payment_status, $start_date, $end_date, $start_number, $end_number, $start_year, $end_year, $type);
 
         try {
@@ -4374,7 +4374,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DocumentList',
+                        '\BillingoClientAPIv3\Client\Model\DocumentList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4382,7 +4382,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4390,7 +4390,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4398,7 +4398,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4406,7 +4406,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4414,7 +4414,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4422,7 +4422,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4441,15 +4441,15 @@ class DocumentApi
      * @param  int $per_page (optional, default to 25)
      * @param  int $block_id Filter documents by the identifier of your DocumentBlock. (optional)
      * @param  int $partner_id Filter documents by the identifier of your Partner. (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
-     * @param  \Swagger\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
      * @param  \DateTime $start_date Filter documents by date. (optional)
      * @param  \DateTime $end_date Filter documents by date. (optional)
      * @param  int $start_number Starting number of the document, should not contain year or any other formatting. Required if &#x60;start_year&#x60; given (optional)
      * @param  int $end_number Ending number of the document, should not contain year or any other formatting. Required if &#x60;end_year&#x60; given (optional)
      * @param  int $start_year Year for &#x60;start_number&#x60; parameter. Required if &#x60;start_number&#x60; given. (optional)
      * @param  int $end_year Year for &#x60;end_number&#x60; parameter. Required if &#x60;end_number&#x60; given. (optional)
-     * @param  \Swagger\Client\Model\DocumentType $type Filter documents by type (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentType $type Filter documents by type (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -4473,22 +4473,22 @@ class DocumentApi
      * @param  int $per_page (optional, default to 25)
      * @param  int $block_id Filter documents by the identifier of your DocumentBlock. (optional)
      * @param  int $partner_id Filter documents by the identifier of your Partner. (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
-     * @param  \Swagger\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
      * @param  \DateTime $start_date Filter documents by date. (optional)
      * @param  \DateTime $end_date Filter documents by date. (optional)
      * @param  int $start_number Starting number of the document, should not contain year or any other formatting. Required if &#x60;start_year&#x60; given (optional)
      * @param  int $end_number Ending number of the document, should not contain year or any other formatting. Required if &#x60;end_year&#x60; given (optional)
      * @param  int $start_year Year for &#x60;start_number&#x60; parameter. Required if &#x60;start_number&#x60; given. (optional)
      * @param  int $end_year Year for &#x60;end_number&#x60; parameter. Required if &#x60;end_number&#x60; given. (optional)
-     * @param  \Swagger\Client\Model\DocumentType $type Filter documents by type (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentType $type Filter documents by type (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function listDocumentAsyncWithHttpInfo($page = null, $per_page = '25', $block_id = null, $partner_id = null, $payment_method = null, $payment_status = null, $start_date = null, $end_date = null, $start_number = null, $end_number = null, $start_year = null, $end_year = null, $type = null)
     {
-        $returnType = '\Swagger\Client\Model\DocumentList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentList';
         $request = $this->listDocumentRequest($page, $per_page, $block_id, $partner_id, $payment_method, $payment_status, $start_date, $end_date, $start_number, $end_number, $start_year, $end_year, $type);
 
         return $this->client
@@ -4535,15 +4535,15 @@ class DocumentApi
      * @param  int $per_page (optional, default to 25)
      * @param  int $block_id Filter documents by the identifier of your DocumentBlock. (optional)
      * @param  int $partner_id Filter documents by the identifier of your Partner. (optional)
-     * @param  \Swagger\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
-     * @param  \Swagger\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method Filter documents by PaymentMethod value. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentStatus $payment_status Filter documents by PaymentStatus value. (optional)
      * @param  \DateTime $start_date Filter documents by date. (optional)
      * @param  \DateTime $end_date Filter documents by date. (optional)
      * @param  int $start_number Starting number of the document, should not contain year or any other formatting. Required if &#x60;start_year&#x60; given (optional)
      * @param  int $end_number Ending number of the document, should not contain year or any other formatting. Required if &#x60;end_year&#x60; given (optional)
      * @param  int $start_year Year for &#x60;start_number&#x60; parameter. Required if &#x60;start_number&#x60; given. (optional)
      * @param  int $end_year Year for &#x60;end_number&#x60; parameter. Required if &#x60;end_number&#x60; given. (optional)
-     * @param  \Swagger\Client\Model\DocumentType $type Filter documents by type (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\DocumentType $type Filter documents by type (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -4689,7 +4689,7 @@ class DocumentApi
      * @param  int $id id (required)
      * @param  float $size In which size the POS PDF should be rendered. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -4707,7 +4707,7 @@ class DocumentApi
      * @param  int $id (required)
      * @param  float $size In which size the POS PDF should be rendered. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -4773,7 +4773,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4781,7 +4781,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4789,7 +4789,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4797,7 +4797,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4805,7 +4805,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4813,7 +4813,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4821,7 +4821,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5025,11 +5025,11 @@ class DocumentApi
      * Send invoice to given email adresses.
      *
      * @param  int $id id (required)
-     * @param  \Swagger\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\SendDocument
+     * @return \BillingoClientAPIv3\Client\Model\SendDocument
      */
     public function sendDocument($id, $body = null)
     {
@@ -5043,15 +5043,15 @@ class DocumentApi
      * Send invoice to given email adresses.
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\SendDocument, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\SendDocument, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendDocumentWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\SendDocument';
+        $returnType = '\BillingoClientAPIv3\Client\Model\SendDocument';
         $request = $this->sendDocumentRequest($id, $body);
 
         try {
@@ -5103,7 +5103,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SendDocument',
+                        '\BillingoClientAPIv3\Client\Model\SendDocument',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5111,7 +5111,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5119,7 +5119,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5127,7 +5127,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5135,7 +5135,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5143,7 +5143,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5151,7 +5151,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5159,7 +5159,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5167,7 +5167,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5183,7 +5183,7 @@ class DocumentApi
      * Send invoice to given email adresses.
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -5204,14 +5204,14 @@ class DocumentApi
      * Send invoice to given email adresses.
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function sendDocumentAsyncWithHttpInfo($id, $body = null)
     {
-        $returnType = '\Swagger\Client\Model\SendDocument';
+        $returnType = '\BillingoClientAPIv3\Client\Model\SendDocument';
         $request = $this->sendDocumentRequest($id, $body);
 
         return $this->client
@@ -5255,7 +5255,7 @@ class DocumentApi
      * Create request for operation 'sendDocument'
      *
      * @param  int $id (required)
-     * @param  \Swagger\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
+     * @param  \BillingoClientAPIv3\Client\Model\SendDocument $body List of email-s where you want to send the invoice. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -5363,12 +5363,12 @@ class DocumentApi
      *
      * Update payment history
      *
-     * @param  \Swagger\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PaymentHistory[]
+     * @return \BillingoClientAPIv3\Client\Model\PaymentHistory[]
      */
     public function updatePayment($body, $id)
     {
@@ -5381,16 +5381,16 @@ class DocumentApi
      *
      * Update payment history
      *
-     * @param  \Swagger\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PaymentHistory[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\PaymentHistory[], HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePaymentWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\PaymentHistory[]';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PaymentHistory[]';
         $request = $this->updatePaymentRequest($body, $id);
 
         try {
@@ -5442,7 +5442,7 @@ class DocumentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PaymentHistory[]',
+                        '\BillingoClientAPIv3\Client\Model\PaymentHistory[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5450,7 +5450,7 @@ class DocumentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5458,7 +5458,7 @@ class DocumentApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5466,7 +5466,7 @@ class DocumentApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5474,7 +5474,7 @@ class DocumentApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5482,7 +5482,7 @@ class DocumentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5490,7 +5490,7 @@ class DocumentApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5498,7 +5498,7 @@ class DocumentApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5506,7 +5506,7 @@ class DocumentApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5521,7 +5521,7 @@ class DocumentApi
      *
      * Update payment history
      *
-     * @param  \Swagger\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -5542,7 +5542,7 @@ class DocumentApi
      *
      * Update payment history
      *
-     * @param  \Swagger\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -5550,7 +5550,7 @@ class DocumentApi
      */
     public function updatePaymentAsyncWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\PaymentHistory[]';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PaymentHistory[]';
         $request = $this->updatePaymentRequest($body, $id);
 
         return $this->client
@@ -5593,7 +5593,7 @@ class DocumentApi
     /**
      * Create request for operation 'updatePayment'
      *
-     * @param  \Swagger\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PaymentHistory[] $body Payment history object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException

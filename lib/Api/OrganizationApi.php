@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -92,9 +92,9 @@ class OrganizationApi
      * Retrieve a organization data.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\OrganizationData
+     * @return \BillingoClientAPIv3\Client\Model\OrganizationData
      */
     public function getOrganizationData()
     {
@@ -108,13 +108,13 @@ class OrganizationApi
      * Retrieve a organization data.
      *
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\OrganizationData, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\OrganizationData, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrganizationDataWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\OrganizationData';
+        $returnType = '\BillingoClientAPIv3\Client\Model\OrganizationData';
         $request = $this->getOrganizationDataRequest();
 
         try {
@@ -166,7 +166,7 @@ class OrganizationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\OrganizationData',
+                        '\BillingoClientAPIv3\Client\Model\OrganizationData',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -174,7 +174,7 @@ class OrganizationApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -182,7 +182,7 @@ class OrganizationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -190,7 +190,7 @@ class OrganizationApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -198,7 +198,7 @@ class OrganizationApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -206,7 +206,7 @@ class OrganizationApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class OrganizationApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class OrganizationApi
      */
     public function getOrganizationDataAsyncWithHttpInfo()
     {
-        $returnType = '\Swagger\Client\Model\OrganizationData';
+        $returnType = '\BillingoClientAPIv3\Client\Model\OrganizationData';
         $request = $this->getOrganizationDataRequest();
 
         return $this->client

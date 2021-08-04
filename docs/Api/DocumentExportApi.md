@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**poll**](DocumentExportApi.md#poll) | **GET** /document-export/{id}/poll | Retrieve export state.
 
 # **create**
-> \Swagger\Client\Model\DocumentExportId create($body)
+> \BillingoClientAPIv3\Client\Model\DocumentExportId create($body)
 
 Create document export.
 
@@ -24,13 +24,13 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\DocumentExportApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\DocumentExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\CreateDocumentExport(); // \Swagger\Client\Model\CreateDocumentExport | Create document export body.
+$body = new \BillingoClientAPIv3\Client\Model\CreateDocumentExport(); // \BillingoClientAPIv3\Client\Model\CreateDocumentExport | Create document export body.
 
 try {
     $result = $apiInstance->create($body);
@@ -45,11 +45,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateDocumentExport**](../Model/CreateDocumentExport.md)| Create document export body. |
+ **body** | [**\BillingoClientAPIv3\Client\Model\CreateDocumentExport**](../Model/CreateDocumentExport.md)| Create document export body. |
 
 ### Return type
 
-[**\Swagger\Client\Model\DocumentExportId**](../Model/DocumentExportId.md)
+[**\BillingoClientAPIv3\Client\Model\DocumentExportId**](../Model/DocumentExportId.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\DocumentExportApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\DocumentExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -117,7 +117,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **poll**
-> \Swagger\Client\Model\DocumentExportStatus poll($id)
+> \BillingoClientAPIv3\Client\Model\DocumentExportStatus poll($id)
 
 Retrieve export state.
 
@@ -132,7 +132,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\DocumentExportApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\DocumentExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -157,7 +157,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DocumentExportStatus**](../Model/DocumentExportStatus.md)
+[**\BillingoClientAPIv3\Client\Model\DocumentExportStatus**](../Model/DocumentExportStatus.md)
 
 ### Authorization
 

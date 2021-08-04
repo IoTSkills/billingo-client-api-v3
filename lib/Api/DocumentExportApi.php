@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -91,11 +91,11 @@ class DocumentExportApi
      *
      * Create document export.
      *
-     * @param  \Swagger\Client\Model\CreateDocumentExport $body Create document export body. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\CreateDocumentExport $body Create document export body. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DocumentExportId
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportId
      */
     public function create($body)
     {
@@ -108,15 +108,15 @@ class DocumentExportApi
      *
      * Create document export.
      *
-     * @param  \Swagger\Client\Model\CreateDocumentExport $body Create document export body. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\CreateDocumentExport $body Create document export body. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DocumentExportId, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\DocumentExportId, HTTP status code, HTTP response headers (array of strings)
      */
     public function createWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\DocumentExportId';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentExportId';
         $request = $this->createRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class DocumentExportApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DocumentExportId',
+                        '\BillingoClientAPIv3\Client\Model\DocumentExportId',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class DocumentExportApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class DocumentExportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class DocumentExportApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class DocumentExportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class DocumentExportApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class DocumentExportApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class DocumentExportApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class DocumentExportApi
      *
      * Create document export.
      *
-     * @param  \Swagger\Client\Model\CreateDocumentExport $body Create document export body. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\CreateDocumentExport $body Create document export body. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -259,14 +259,14 @@ class DocumentExportApi
      *
      * Create document export.
      *
-     * @param  \Swagger\Client\Model\CreateDocumentExport $body Create document export body. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\CreateDocumentExport $body Create document export body. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\DocumentExportId';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentExportId';
         $request = $this->createRequest($body);
 
         return $this->client
@@ -309,7 +309,7 @@ class DocumentExportApi
     /**
      * Create request for operation 'create'
      *
-     * @param  \Swagger\Client\Model\CreateDocumentExport $body Create document export body. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\CreateDocumentExport $body Create document export body. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -411,7 +411,7 @@ class DocumentExportApi
      *
      * @param  string $id The ID from create document export endpoint. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return string
      */
@@ -428,7 +428,7 @@ class DocumentExportApi
      *
      * @param  string $id The ID from create document export endpoint. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of string, HTTP status code, HTTP response headers (array of strings)
      */
@@ -494,7 +494,7 @@ class DocumentExportApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -502,7 +502,7 @@ class DocumentExportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -510,7 +510,7 @@ class DocumentExportApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -518,7 +518,7 @@ class DocumentExportApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -526,7 +526,7 @@ class DocumentExportApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -534,7 +534,7 @@ class DocumentExportApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -542,7 +542,7 @@ class DocumentExportApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -734,9 +734,9 @@ class DocumentExportApi
      *
      * @param  string $id The ID from create document export endpoint. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\DocumentExportStatus
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportStatus
      */
     public function poll($id)
     {
@@ -751,13 +751,13 @@ class DocumentExportApi
      *
      * @param  string $id The ID from create document export endpoint. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\DocumentExportStatus, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\DocumentExportStatus, HTTP status code, HTTP response headers (array of strings)
      */
     public function pollWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DocumentExportStatus';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentExportStatus';
         $request = $this->pollRequest($id);
 
         try {
@@ -809,7 +809,7 @@ class DocumentExportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\DocumentExportStatus',
+                        '\BillingoClientAPIv3\Client\Model\DocumentExportStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -817,7 +817,7 @@ class DocumentExportApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -825,7 +825,7 @@ class DocumentExportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -833,7 +833,7 @@ class DocumentExportApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -841,7 +841,7 @@ class DocumentExportApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -849,7 +849,7 @@ class DocumentExportApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -857,7 +857,7 @@ class DocumentExportApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -865,7 +865,7 @@ class DocumentExportApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -907,7 +907,7 @@ class DocumentExportApi
      */
     public function pollAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\DocumentExportStatus';
+        $returnType = '\BillingoClientAPIv3\Client\Model\DocumentExportStatus';
         $request = $this->pollRequest($id);
 
         return $this->client

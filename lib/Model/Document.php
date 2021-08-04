@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * Document Class Doc Comment
@@ -59,30 +59,30 @@ class Document implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
 'invoice_number' => 'string',
-'type' => '\Swagger\Client\Model\DocumentType',
+'type' => '\BillingoClientAPIv3\Client\Model\DocumentType',
 'cancelled' => 'bool',
 'block_id' => 'int',
-'payment_status' => '\Swagger\Client\Model\PaymentStatus',
-'payment_method' => '\Swagger\Client\Model\PaymentMethod',
+'payment_status' => '\BillingoClientAPIv3\Client\Model\PaymentStatus',
+'payment_method' => '\BillingoClientAPIv3\Client\Model\PaymentMethod',
 'gross_total' => 'float',
-'currency' => '\Swagger\Client\Model\Currency',
+'currency' => '\BillingoClientAPIv3\Client\Model\Currency',
 'conversion_rate' => 'float',
 'invoice_date' => '\DateTime',
 'fulfillment_date' => '\DateTime',
 'due_date' => '\DateTime',
 'paid_date' => '\DateTime',
-'organization' => '\Swagger\Client\Model\DocumentOrganization',
-'partner' => '\Swagger\Client\Model\Partner',
-'document_partner' => '\Swagger\Client\Model\DocumentPartner',
+'organization' => '\BillingoClientAPIv3\Client\Model\DocumentOrganization',
+'partner' => '\BillingoClientAPIv3\Client\Model\Partner',
+'document_partner' => '\BillingoClientAPIv3\Client\Model\DocumentPartner',
 'electronic' => 'bool',
 'comment' => 'string',
 'tags' => 'string[]',
-'notification_status' => '\Swagger\Client\Model\DocumentNotificationStatus',
-'language' => '\Swagger\Client\Model\DocumentLanguage',
-'items' => '\Swagger\Client\Model\DocumentItem[]',
-'summary' => '\Swagger\Client\Model\DocumentSummary',
-'settings' => '\Swagger\Client\Model\DocumentSettings',
-'related_documents' => '\Swagger\Client\Model\DocumentAncestor[]'    ];
+'notification_status' => '\BillingoClientAPIv3\Client\Model\DocumentNotificationStatus',
+'language' => '\BillingoClientAPIv3\Client\Model\DocumentLanguage',
+'items' => '\BillingoClientAPIv3\Client\Model\DocumentItem[]',
+'summary' => '\BillingoClientAPIv3\Client\Model\DocumentSummary',
+'settings' => '\BillingoClientAPIv3\Client\Model\DocumentSettings',
+'related_documents' => '\BillingoClientAPIv3\Client\Model\DocumentAncestor[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -398,7 +398,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\DocumentType
+     * @return \BillingoClientAPIv3\Client\Model\DocumentType
      */
     public function getType()
     {
@@ -408,7 +408,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\DocumentType $type type
+     * @param \BillingoClientAPIv3\Client\Model\DocumentType $type type
      *
      * @return $this
      */
@@ -470,7 +470,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets payment_status
      *
-     * @return \Swagger\Client\Model\PaymentStatus
+     * @return \BillingoClientAPIv3\Client\Model\PaymentStatus
      */
     public function getPaymentStatus()
     {
@@ -480,7 +480,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets payment_status
      *
-     * @param \Swagger\Client\Model\PaymentStatus $payment_status payment_status
+     * @param \BillingoClientAPIv3\Client\Model\PaymentStatus $payment_status payment_status
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \BillingoClientAPIv3\Client\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -504,7 +504,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -542,7 +542,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \BillingoClientAPIv3\Client\Model\Currency
      */
     public function getCurrency()
     {
@@ -552,7 +552,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \BillingoClientAPIv3\Client\Model\Currency $currency currency
      *
      * @return $this
      */
@@ -686,7 +686,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets organization
      *
-     * @return \Swagger\Client\Model\DocumentOrganization
+     * @return \BillingoClientAPIv3\Client\Model\DocumentOrganization
      */
     public function getOrganization()
     {
@@ -696,7 +696,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets organization
      *
-     * @param \Swagger\Client\Model\DocumentOrganization $organization organization
+     * @param \BillingoClientAPIv3\Client\Model\DocumentOrganization $organization organization
      *
      * @return $this
      */
@@ -710,7 +710,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets partner
      *
-     * @return \Swagger\Client\Model\Partner
+     * @return \BillingoClientAPIv3\Client\Model\Partner
      */
     public function getPartner()
     {
@@ -720,7 +720,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets partner
      *
-     * @param \Swagger\Client\Model\Partner $partner partner
+     * @param \BillingoClientAPIv3\Client\Model\Partner $partner partner
      *
      * @return $this
      */
@@ -734,7 +734,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets document_partner
      *
-     * @return \Swagger\Client\Model\DocumentPartner
+     * @return \BillingoClientAPIv3\Client\Model\DocumentPartner
      */
     public function getDocumentPartner()
     {
@@ -744,7 +744,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets document_partner
      *
-     * @param \Swagger\Client\Model\DocumentPartner $document_partner document_partner
+     * @param \BillingoClientAPIv3\Client\Model\DocumentPartner $document_partner document_partner
      *
      * @return $this
      */
@@ -830,7 +830,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets notification_status
      *
-     * @return \Swagger\Client\Model\DocumentNotificationStatus
+     * @return \BillingoClientAPIv3\Client\Model\DocumentNotificationStatus
      */
     public function getNotificationStatus()
     {
@@ -840,7 +840,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets notification_status
      *
-     * @param \Swagger\Client\Model\DocumentNotificationStatus $notification_status notification_status
+     * @param \BillingoClientAPIv3\Client\Model\DocumentNotificationStatus $notification_status notification_status
      *
      * @return $this
      */
@@ -854,7 +854,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets language
      *
-     * @return \Swagger\Client\Model\DocumentLanguage
+     * @return \BillingoClientAPIv3\Client\Model\DocumentLanguage
      */
     public function getLanguage()
     {
@@ -864,7 +864,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets language
      *
-     * @param \Swagger\Client\Model\DocumentLanguage $language language
+     * @param \BillingoClientAPIv3\Client\Model\DocumentLanguage $language language
      *
      * @return $this
      */
@@ -878,7 +878,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\DocumentItem[]
+     * @return \BillingoClientAPIv3\Client\Model\DocumentItem[]
      */
     public function getItems()
     {
@@ -888,7 +888,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\DocumentItem[] $items items
+     * @param \BillingoClientAPIv3\Client\Model\DocumentItem[] $items items
      *
      * @return $this
      */
@@ -902,7 +902,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets summary
      *
-     * @return \Swagger\Client\Model\DocumentSummary
+     * @return \BillingoClientAPIv3\Client\Model\DocumentSummary
      */
     public function getSummary()
     {
@@ -912,7 +912,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets summary
      *
-     * @param \Swagger\Client\Model\DocumentSummary $summary summary
+     * @param \BillingoClientAPIv3\Client\Model\DocumentSummary $summary summary
      *
      * @return $this
      */
@@ -926,7 +926,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets settings
      *
-     * @return \Swagger\Client\Model\DocumentSettings
+     * @return \BillingoClientAPIv3\Client\Model\DocumentSettings
      */
     public function getSettings()
     {
@@ -936,7 +936,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets settings
      *
-     * @param \Swagger\Client\Model\DocumentSettings $settings settings
+     * @param \BillingoClientAPIv3\Client\Model\DocumentSettings $settings settings
      *
      * @return $this
      */
@@ -950,7 +950,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Gets related_documents
      *
-     * @return \Swagger\Client\Model\DocumentAncestor[]
+     * @return \BillingoClientAPIv3\Client\Model\DocumentAncestor[]
      */
     public function getRelatedDocuments()
     {
@@ -960,7 +960,7 @@ class Document implements ModelInterface, ArrayAccess
     /**
      * Sets related_documents
      *
-     * @param \Swagger\Client\Model\DocumentAncestor[] $related_documents related_documents
+     * @param \BillingoClientAPIv3\Client\Model\DocumentAncestor[] $related_documents related_documents
      *
      * @return $this
      */

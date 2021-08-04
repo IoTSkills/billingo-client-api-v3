@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * TooManyRequestsResponse Class Doc Comment
@@ -56,7 +56,7 @@ class TooManyRequestsResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'error' => '\Swagger\Client\Model\ClientError'    ];
+        'error' => '\BillingoClientAPIv3\Client\Model\ClientError'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class TooManyRequestsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return \Swagger\Client\Model\ClientError
+     * @return \BillingoClientAPIv3\Client\Model\ClientError
      */
     public function getError()
     {
@@ -209,7 +209,7 @@ class TooManyRequestsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param \Swagger\Client\Model\ClientError $error error
+     * @param \BillingoClientAPIv3\Client\Model\ClientError $error error
      *
      * @return $this
      */

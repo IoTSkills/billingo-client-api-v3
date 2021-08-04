@@ -11,7 +11,7 @@ Method | HTTP request | Description
 [**updateProduct**](ProductApi.md#updateproduct) | **PUT** /products/{id} | Update a product
 
 # **createProduct**
-> \Swagger\Client\Model\Product createProduct($body)
+> \BillingoClientAPIv3\Client\Model\Product createProduct($body)
 
 Create a product
 
@@ -26,13 +26,13 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ProductApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\Product(); // \Swagger\Client\Model\Product | Product object that you would like to store.
+$body = new \BillingoClientAPIv3\Client\Model\Product(); // \BillingoClientAPIv3\Client\Model\Product | Product object that you would like to store.
 
 try {
     $result = $apiInstance->createProduct($body);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Product**](../Model/Product.md)| Product object that you would like to store. |
+ **body** | [**\BillingoClientAPIv3\Client\Model\Product**](../Model/Product.md)| Product object that you would like to store. |
 
 ### Return type
 
-[**\Swagger\Client\Model\Product**](../Model/Product.md)
+[**\BillingoClientAPIv3\Client\Model\Product**](../Model/Product.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ProductApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -118,7 +118,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProduct**
-> \Swagger\Client\Model\Product getProduct($id)
+> \BillingoClientAPIv3\Client\Model\Product getProduct($id)
 
 Retrieve a product
 
@@ -133,7 +133,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ProductApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -158,7 +158,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Product**](../Model/Product.md)
+[**\BillingoClientAPIv3\Client\Model\Product**](../Model/Product.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listProduct**
-> \Swagger\Client\Model\ProductList listProduct($page, $per_page, $query)
+> \BillingoClientAPIv3\Client\Model\ProductList listProduct($page, $per_page, $query)
 
 List all product
 
@@ -187,7 +187,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ProductApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -216,7 +216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\ProductList**](../Model/ProductList.md)
+[**\BillingoClientAPIv3\Client\Model\ProductList**](../Model/ProductList.md)
 
 ### Authorization
 
@@ -230,7 +230,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateProduct**
-> \Swagger\Client\Model\Product updateProduct($body, $id)
+> \BillingoClientAPIv3\Client\Model\Product updateProduct($body, $id)
 
 Update a product
 
@@ -245,13 +245,13 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ProductApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\ProductApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\Product(); // \Swagger\Client\Model\Product | Product object that you would like to update.
+$body = new \BillingoClientAPIv3\Client\Model\Product(); // \BillingoClientAPIv3\Client\Model\Product | Product object that you would like to update.
 $id = 56; // int | 
 
 try {
@@ -267,12 +267,12 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\Product**](../Model/Product.md)| Product object that you would like to update. |
+ **body** | [**\BillingoClientAPIv3\Client\Model\Product**](../Model/Product.md)| Product object that you would like to update. |
  **id** | **int**|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\Product**](../Model/Product.md)
+[**\BillingoClientAPIv3\Client\Model\Product**](../Model/Product.md)
 
 ### Authorization
 

@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace IoTSkills\BillingoClientAPIv3;
+namespace BillingoClientAPIv3\Client;
 
 use \Exception;
 

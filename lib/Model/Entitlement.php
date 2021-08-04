@@ -26,8 +26,8 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
-use \Swagger\Client\ObjectSerializer;
+namespace BillingoClientAPIv3\Client\Model;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * Entitlement Class Doc Comment

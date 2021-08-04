@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * DocumentOrganization Class Doc Comment
@@ -58,8 +58,8 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
 'tax_number' => 'string',
-'bank_account' => '\Swagger\Client\Model\DocumentBankAccount',
-'address' => '\Swagger\Client\Model\Address',
+'bank_account' => '\BillingoClientAPIv3\Client\Model\DocumentBankAccount',
+'address' => '\BillingoClientAPIv3\Client\Model\Address',
 'small_taxpayer' => 'bool',
 'ev_number' => 'string',
 'eu_tax_number' => 'string',
@@ -289,7 +289,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Gets bank_account
      *
-     * @return \Swagger\Client\Model\DocumentBankAccount
+     * @return \BillingoClientAPIv3\Client\Model\DocumentBankAccount
      */
     public function getBankAccount()
     {
@@ -299,7 +299,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Sets bank_account
      *
-     * @param \Swagger\Client\Model\DocumentBankAccount $bank_account bank_account
+     * @param \BillingoClientAPIv3\Client\Model\DocumentBankAccount $bank_account bank_account
      *
      * @return $this
      */
@@ -313,7 +313,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \BillingoClientAPIv3\Client\Model\Address
      */
     public function getAddress()
     {
@@ -323,7 +323,7 @@ class DocumentOrganization implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \BillingoClientAPIv3\Client\Model\Address $address address
      *
      * @return $this
      */

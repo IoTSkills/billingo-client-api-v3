@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**from_currency** | [**\Swagger\Client\Model\Currency**](Currency.md) |  | [optional] 
-**to_currency** | [**\Swagger\Client\Model\Currency**](Currency.md) |  | [optional] 
+**from_currency** | [**\BillingoClientAPIv3\Client\Model\Currency**](Currency.md) |  | [optional] 
+**to_currency** | [**\BillingoClientAPIv3\Client\Model\Currency**](Currency.md) |  | [optional] 
 **conversation_rate** | **float** |  | [optional] 
 **date** | [**\DateTime**](\DateTime.md) |  | [optional] 
 

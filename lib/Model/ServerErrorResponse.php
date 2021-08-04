@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * ServerErrorResponse Class Doc Comment
@@ -56,7 +56,7 @@ class ServerErrorResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'error' => '\Swagger\Client\Model\ServerError'    ];
+        'error' => '\BillingoClientAPIv3\Client\Model\ServerError'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -199,7 +199,7 @@ class ServerErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Gets error
      *
-     * @return \Swagger\Client\Model\ServerError
+     * @return \BillingoClientAPIv3\Client\Model\ServerError
      */
     public function getError()
     {
@@ -209,7 +209,7 @@ class ServerErrorResponse implements ModelInterface, ArrayAccess
     /**
      * Sets error
      *
-     * @param \Swagger\Client\Model\ServerError $error error
+     * @param \BillingoClientAPIv3\Client\Model\ServerError $error error
      *
      * @return $this
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * DocumentSummary Class Doc Comment
@@ -61,7 +61,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess
 'gross_amount_local' => 'float',
 'vat_amount' => 'float',
 'vat_amount_local' => 'float',
-'vat_rate_summary' => '\Swagger\Client\Model\DocumentVatRateSummary[]'    ];
+'vat_rate_summary' => '\BillingoClientAPIv3\Client\Model\DocumentVatRateSummary[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -349,7 +349,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess
     /**
      * Gets vat_rate_summary
      *
-     * @return \Swagger\Client\Model\DocumentVatRateSummary[]
+     * @return \BillingoClientAPIv3\Client\Model\DocumentVatRateSummary[]
      */
     public function getVatRateSummary()
     {
@@ -359,7 +359,7 @@ class DocumentSummary implements ModelInterface, ArrayAccess
     /**
      * Sets vat_rate_summary
      *
-     * @param \Swagger\Client\Model\DocumentVatRateSummary[] $vat_rate_summary vat_rate_summary
+     * @param \BillingoClientAPIv3\Client\Model\DocumentVatRateSummary[] $vat_rate_summary vat_rate_summary
      *
      * @return $this
      */

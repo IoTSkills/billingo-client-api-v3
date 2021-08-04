@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **gross_amount_local** | **float** |  | [optional] 
 **vat_amount** | **float** |  | [optional] 
 **vat_amount_local** | **float** |  | [optional] 
-**vat_rate_summary** | [**\Swagger\Client\Model\DocumentVatRateSummary[]**](DocumentVatRateSummary.md) |  | [optional] 
+**vat_rate_summary** | [**\BillingoClientAPIv3\Client\Model\DocumentVatRateSummary[]**](DocumentVatRateSummary.md) |  | [optional] 
 
 [[Back to Model list]](../../README.md#documentation-for-models) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to README]](../../README.md)
 

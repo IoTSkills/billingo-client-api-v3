@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -93,9 +93,9 @@ class UtilApi
      *
      * @param  string $tax_number tax_number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\TaxNumber
+     * @return \BillingoClientAPIv3\Client\Model\TaxNumber
      */
     public function checkTaxNumber($tax_number)
     {
@@ -110,13 +110,13 @@ class UtilApi
      *
      * @param  string $tax_number (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\TaxNumber, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\TaxNumber, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkTaxNumberWithHttpInfo($tax_number)
     {
-        $returnType = '\Swagger\Client\Model\TaxNumber';
+        $returnType = '\BillingoClientAPIv3\Client\Model\TaxNumber';
         $request = $this->checkTaxNumberRequest($tax_number);
 
         try {
@@ -168,7 +168,7 @@ class UtilApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TaxNumber',
+                        '\BillingoClientAPIv3\Client\Model\TaxNumber',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class UtilApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class UtilApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class UtilApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class UtilApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class UtilApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class UtilApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -258,7 +258,7 @@ class UtilApi
      */
     public function checkTaxNumberAsyncWithHttpInfo($tax_number)
     {
-        $returnType = '\Swagger\Client\Model\TaxNumber';
+        $returnType = '\BillingoClientAPIv3\Client\Model\TaxNumber';
         $request = $this->checkTaxNumberRequest($tax_number);
 
         return $this->client
@@ -408,9 +408,9 @@ class UtilApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Id
+     * @return \BillingoClientAPIv3\Client\Model\Id
      */
     public function getId($id)
     {
@@ -425,13 +425,13 @@ class UtilApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Id, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Id, HTTP status code, HTTP response headers (array of strings)
      */
     public function getIdWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Id';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Id';
         $request = $this->getIdRequest($id);
 
         try {
@@ -483,7 +483,7 @@ class UtilApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Id',
+                        '\BillingoClientAPIv3\Client\Model\Id',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -491,7 +491,7 @@ class UtilApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -499,7 +499,7 @@ class UtilApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -507,7 +507,7 @@ class UtilApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -515,7 +515,7 @@ class UtilApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -523,7 +523,7 @@ class UtilApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -531,7 +531,7 @@ class UtilApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -539,7 +539,7 @@ class UtilApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -581,7 +581,7 @@ class UtilApi
      */
     public function getIdAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Id';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Id';
         $request = $this->getIdRequest($id);
 
         return $this->client

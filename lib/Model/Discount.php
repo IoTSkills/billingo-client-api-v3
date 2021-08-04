@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * Discount Class Doc Comment
@@ -56,7 +56,7 @@ class Discount implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'type' => '\Swagger\Client\Model\DiscountType',
+        'type' => '\BillingoClientAPIv3\Client\Model\DiscountType',
 'value' => 'int'    ];
 
     /**
@@ -205,7 +205,7 @@ class Discount implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\DiscountType
+     * @return \BillingoClientAPIv3\Client\Model\DiscountType
      */
     public function getType()
     {
@@ -215,7 +215,7 @@ class Discount implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\DiscountType $type type
+     * @param \BillingoClientAPIv3\Client\Model\DiscountType $type type
      *
      * @return $this
      */

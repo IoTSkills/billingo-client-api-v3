@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * Address Class Doc Comment
@@ -56,7 +56,7 @@ class Address implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'country_code' => '\Swagger\Client\Model\Country',
+        'country_code' => '\BillingoClientAPIv3\Client\Model\Country',
 'post_code' => 'string',
 'city' => 'string',
 'address' => 'string'    ];
@@ -229,7 +229,7 @@ class Address implements ModelInterface, ArrayAccess
     /**
      * Gets country_code
      *
-     * @return \Swagger\Client\Model\Country
+     * @return \BillingoClientAPIv3\Client\Model\Country
      */
     public function getCountryCode()
     {
@@ -239,7 +239,7 @@ class Address implements ModelInterface, ArrayAccess
     /**
      * Sets country_code
      *
-     * @param \Swagger\Client\Model\Country $country_code country_code
+     * @param \BillingoClientAPIv3\Client\Model\Country $country_code country_code
      *
      * @return $this
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * PartnerCustomBillingSettings Class Doc Comment
@@ -56,12 +56,12 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'payment_method' => '\Swagger\Client\Model\PaymentMethod',
-'document_form' => '\Swagger\Client\Model\DocumentForm',
+        'payment_method' => '\BillingoClientAPIv3\Client\Model\PaymentMethod',
+'document_form' => '\BillingoClientAPIv3\Client\Model\DocumentForm',
 'due_days' => 'int',
-'document_currency' => '\Swagger\Client\Model\Currency',
-'template_language_code' => '\Swagger\Client\Model\DocumentLanguage',
-'discount' => '\Swagger\Client\Model\Discount'    ];
+'document_currency' => '\BillingoClientAPIv3\Client\Model\Currency',
+'template_language_code' => '\BillingoClientAPIv3\Client\Model\DocumentLanguage',
+'discount' => '\BillingoClientAPIv3\Client\Model\Discount'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -229,7 +229,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \BillingoClientAPIv3\Client\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -239,7 +239,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -253,7 +253,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Gets document_form
      *
-     * @return \Swagger\Client\Model\DocumentForm
+     * @return \BillingoClientAPIv3\Client\Model\DocumentForm
      */
     public function getDocumentForm()
     {
@@ -263,7 +263,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Sets document_form
      *
-     * @param \Swagger\Client\Model\DocumentForm $document_form document_form
+     * @param \BillingoClientAPIv3\Client\Model\DocumentForm $document_form document_form
      *
      * @return $this
      */
@@ -301,7 +301,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Gets document_currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \BillingoClientAPIv3\Client\Model\Currency
      */
     public function getDocumentCurrency()
     {
@@ -311,7 +311,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Sets document_currency
      *
-     * @param \Swagger\Client\Model\Currency $document_currency document_currency
+     * @param \BillingoClientAPIv3\Client\Model\Currency $document_currency document_currency
      *
      * @return $this
      */
@@ -325,7 +325,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Gets template_language_code
      *
-     * @return \Swagger\Client\Model\DocumentLanguage
+     * @return \BillingoClientAPIv3\Client\Model\DocumentLanguage
      */
     public function getTemplateLanguageCode()
     {
@@ -335,7 +335,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Sets template_language_code
      *
-     * @param \Swagger\Client\Model\DocumentLanguage $template_language_code template_language_code
+     * @param \BillingoClientAPIv3\Client\Model\DocumentLanguage $template_language_code template_language_code
      *
      * @return $this
      */
@@ -349,7 +349,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Gets discount
      *
-     * @return \Swagger\Client\Model\Discount
+     * @return \BillingoClientAPIv3\Client\Model\Discount
      */
     public function getDiscount()
     {
@@ -359,7 +359,7 @@ class PartnerCustomBillingSettings implements ModelInterface, ArrayAccess
     /**
      * Sets discount
      *
-     * @param \Swagger\Client\Model\Discount $discount discount
+     * @param \BillingoClientAPIv3\Client\Model\Discount $discount discount
      *
      * @return $this
      */

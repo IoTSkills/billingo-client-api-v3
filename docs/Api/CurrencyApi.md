@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getConversionRate**](CurrencyApi.md#getconversionrate) | **GET** /currencies | Get currencies exchange rate.
 
 # **getConversionRate**
-> \Swagger\Client\Model\ConversationRate getConversionRate($from, $to, $date)
+> \BillingoClientAPIv3\Client\Model\ConversationRate getConversionRate($from, $to, $date)
 
 Get currencies exchange rate.
 
@@ -22,14 +22,14 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\CurrencyApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\CurrencyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$from = new \Swagger\Client\Model\Currency(); // \Swagger\Client\Model\Currency | 
-$to = new \Swagger\Client\Model\Currency(); // \Swagger\Client\Model\Currency | 
+$from = new \BillingoClientAPIv3\Client\Model\Currency(); // \BillingoClientAPIv3\Client\Model\Currency | 
+$to = new \BillingoClientAPIv3\Client\Model\Currency(); // \BillingoClientAPIv3\Client\Model\Currency | 
 $date = new \DateTime("2013-10-20"); // \DateTime | 
 
 try {
@@ -45,13 +45,13 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **from** | [**\Swagger\Client\Model\Currency**](../Model/.md)|  |
- **to** | [**\Swagger\Client\Model\Currency**](../Model/.md)|  |
+ **from** | [**\BillingoClientAPIv3\Client\Model\Currency**](../Model/.md)|  |
+ **to** | [**\BillingoClientAPIv3\Client\Model\Currency**](../Model/.md)|  |
  **date** | **\DateTime**|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\ConversationRate**](../Model/ConversationRate.md)
+[**\BillingoClientAPIv3\Client\Model\ConversationRate**](../Model/ConversationRate.md)
 
 ### Authorization
 

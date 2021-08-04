@@ -28,9 +28,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "IoTSkills\\BillingoClientAPIv3\\" : "lib/" }
+        "psr-4": { "BillingoClientAPIv3\\Client\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "IoTSkills\\BillingoClientAPIv3\\" : "test/" }
+        "psr-4": { "BillingoClientAPIv3\\Client\\" : "test/" }
     }
 }

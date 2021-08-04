@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -91,11 +91,11 @@ class PartnerApi
      *
      * Create a partner
      *
-     * @param  \Swagger\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Partner
+     * @return \BillingoClientAPIv3\Client\Model\Partner
      */
     public function createPartner($body)
     {
@@ -108,15 +108,15 @@ class PartnerApi
      *
      * Create a partner
      *
-     * @param  \Swagger\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Partner, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Partner, HTTP status code, HTTP response headers (array of strings)
      */
     public function createPartnerWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Partner';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Partner';
         $request = $this->createPartnerRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class PartnerApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Partner',
+                        '\BillingoClientAPIv3\Client\Model\Partner',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class PartnerApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class PartnerApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class PartnerApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class PartnerApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class PartnerApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class PartnerApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class PartnerApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class PartnerApi
      *
      * Create a partner
      *
-     * @param  \Swagger\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -259,14 +259,14 @@ class PartnerApi
      *
      * Create a partner
      *
-     * @param  \Swagger\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createPartnerAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\Partner';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Partner';
         $request = $this->createPartnerRequest($body);
 
         return $this->client
@@ -309,7 +309,7 @@ class PartnerApi
     /**
      * Create request for operation 'createPartner'
      *
-     * @param  \Swagger\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersBody $body PartnerUpsert object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -411,7 +411,7 @@ class PartnerApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -427,7 +427,7 @@ class PartnerApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -471,7 +471,7 @@ class PartnerApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -479,7 +479,7 @@ class PartnerApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -487,7 +487,7 @@ class PartnerApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -495,7 +495,7 @@ class PartnerApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -503,7 +503,7 @@ class PartnerApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -511,7 +511,7 @@ class PartnerApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -519,7 +519,7 @@ class PartnerApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -697,9 +697,9 @@ class PartnerApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Partner
+     * @return \BillingoClientAPIv3\Client\Model\Partner
      */
     public function getPartner($id)
     {
@@ -714,13 +714,13 @@ class PartnerApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Partner, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Partner, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPartnerWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Partner';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Partner';
         $request = $this->getPartnerRequest($id);
 
         try {
@@ -772,7 +772,7 @@ class PartnerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Partner',
+                        '\BillingoClientAPIv3\Client\Model\Partner',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -780,7 +780,7 @@ class PartnerApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -788,7 +788,7 @@ class PartnerApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -796,7 +796,7 @@ class PartnerApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -804,7 +804,7 @@ class PartnerApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -812,7 +812,7 @@ class PartnerApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -820,7 +820,7 @@ class PartnerApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -828,7 +828,7 @@ class PartnerApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -870,7 +870,7 @@ class PartnerApi
      */
     public function getPartnerAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\Partner';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Partner';
         $request = $this->getPartnerRequest($id);
 
         return $this->client
@@ -1022,9 +1022,9 @@ class PartnerApi
      * @param  int $per_page per_page (optional, default to 25)
      * @param  string $query query (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\PartnerList
+     * @return \BillingoClientAPIv3\Client\Model\PartnerList
      */
     public function listPartner($page = null, $per_page = '25', $query = null)
     {
@@ -1041,13 +1041,13 @@ class PartnerApi
      * @param  int $per_page (optional, default to 25)
      * @param  string $query (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\PartnerList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\PartnerList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listPartnerWithHttpInfo($page = null, $per_page = '25', $query = null)
     {
-        $returnType = '\Swagger\Client\Model\PartnerList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PartnerList';
         $request = $this->listPartnerRequest($page, $per_page, $query);
 
         try {
@@ -1099,7 +1099,7 @@ class PartnerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\PartnerList',
+                        '\BillingoClientAPIv3\Client\Model\PartnerList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1107,7 +1107,7 @@ class PartnerApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1115,7 +1115,7 @@ class PartnerApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1123,7 +1123,7 @@ class PartnerApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1131,7 +1131,7 @@ class PartnerApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1139,7 +1139,7 @@ class PartnerApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1147,7 +1147,7 @@ class PartnerApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1193,7 +1193,7 @@ class PartnerApi
      */
     public function listPartnerAsyncWithHttpInfo($page = null, $per_page = '25', $query = null)
     {
-        $returnType = '\Swagger\Client\Model\PartnerList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\PartnerList';
         $request = $this->listPartnerRequest($page, $per_page, $query);
 
         return $this->client
@@ -1341,12 +1341,12 @@ class PartnerApi
      *
      * Update a partner
      *
-     * @param  \Swagger\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Partner
+     * @return \BillingoClientAPIv3\Client\Model\Partner
      */
     public function updatePartner($body, $id)
     {
@@ -1359,16 +1359,16 @@ class PartnerApi
      *
      * Update a partner
      *
-     * @param  \Swagger\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Partner, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\Partner, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePartnerWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\Partner';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Partner';
         $request = $this->updatePartnerRequest($body, $id);
 
         try {
@@ -1420,7 +1420,7 @@ class PartnerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Partner',
+                        '\BillingoClientAPIv3\Client\Model\Partner',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1428,7 +1428,7 @@ class PartnerApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1436,7 +1436,7 @@ class PartnerApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1444,7 +1444,7 @@ class PartnerApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1452,7 +1452,7 @@ class PartnerApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1460,7 +1460,7 @@ class PartnerApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1468,7 +1468,7 @@ class PartnerApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1476,7 +1476,7 @@ class PartnerApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1484,7 +1484,7 @@ class PartnerApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1499,7 +1499,7 @@ class PartnerApi
      *
      * Update a partner
      *
-     * @param  \Swagger\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1520,7 +1520,7 @@ class PartnerApi
      *
      * Update a partner
      *
-     * @param  \Swagger\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1528,7 +1528,7 @@ class PartnerApi
      */
     public function updatePartnerAsyncWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\Partner';
+        $returnType = '\BillingoClientAPIv3\Client\Model\Partner';
         $request = $this->updatePartnerRequest($body, $id);
 
         return $this->client
@@ -1571,7 +1571,7 @@ class PartnerApi
     /**
      * Create request for operation 'updatePartner'
      *
-     * @param  \Swagger\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\PartnersIdBody $body Partner object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * DocumentProductData Class Doc Comment
@@ -58,12 +58,12 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'name' => 'string',
 'unit_price' => 'float',
-'unit_price_type' => '\Swagger\Client\Model\UnitPriceType',
+'unit_price_type' => '\BillingoClientAPIv3\Client\Model\UnitPriceType',
 'quantity' => 'float',
 'unit' => 'string',
-'vat' => '\Swagger\Client\Model\Vat',
+'vat' => '\BillingoClientAPIv3\Client\Model\Vat',
 'comment' => 'string',
-'entitlement' => '\Swagger\Client\Model\Entitlement'    ];
+'entitlement' => '\BillingoClientAPIv3\Client\Model\Entitlement'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -307,7 +307,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Gets unit_price_type
      *
-     * @return \Swagger\Client\Model\UnitPriceType
+     * @return \BillingoClientAPIv3\Client\Model\UnitPriceType
      */
     public function getUnitPriceType()
     {
@@ -317,7 +317,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Sets unit_price_type
      *
-     * @param \Swagger\Client\Model\UnitPriceType $unit_price_type unit_price_type
+     * @param \BillingoClientAPIv3\Client\Model\UnitPriceType $unit_price_type unit_price_type
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Gets vat
      *
-     * @return \Swagger\Client\Model\Vat
+     * @return \BillingoClientAPIv3\Client\Model\Vat
      */
     public function getVat()
     {
@@ -389,7 +389,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Sets vat
      *
-     * @param \Swagger\Client\Model\Vat $vat vat
+     * @param \BillingoClientAPIv3\Client\Model\Vat $vat vat
      *
      * @return $this
      */
@@ -427,7 +427,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Gets entitlement
      *
-     * @return \Swagger\Client\Model\Entitlement
+     * @return \BillingoClientAPIv3\Client\Model\Entitlement
      */
     public function getEntitlement()
     {
@@ -437,7 +437,7 @@ class DocumentProductData implements ModelInterface, ArrayAccess
     /**
      * Sets entitlement
      *
-     * @param \Swagger\Client\Model\Entitlement $entitlement entitlement
+     * @param \BillingoClientAPIv3\Client\Model\Entitlement $entitlement entitlement
      *
      * @return $this
      */

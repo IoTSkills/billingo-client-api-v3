@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -91,13 +91,13 @@ class CurrencyApi
      *
      * Get currencies exchange rate.
      *
-     * @param  \Swagger\Client\Model\Currency $from from (required)
-     * @param  \Swagger\Client\Model\Currency $to to (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $from from (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $to to (required)
      * @param  \DateTime $date date (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ConversationRate
+     * @return \BillingoClientAPIv3\Client\Model\ConversationRate
      */
     public function getConversionRate($from, $to, $date = null)
     {
@@ -110,17 +110,17 @@ class CurrencyApi
      *
      * Get currencies exchange rate.
      *
-     * @param  \Swagger\Client\Model\Currency $from (required)
-     * @param  \Swagger\Client\Model\Currency $to (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $from (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $to (required)
      * @param  \DateTime $date (optional)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ConversationRate, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\ConversationRate, HTTP status code, HTTP response headers (array of strings)
      */
     public function getConversionRateWithHttpInfo($from, $to, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\ConversationRate';
+        $returnType = '\BillingoClientAPIv3\Client\Model\ConversationRate';
         $request = $this->getConversionRateRequest($from, $to, $date);
 
         try {
@@ -172,7 +172,7 @@ class CurrencyApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ConversationRate',
+                        '\BillingoClientAPIv3\Client\Model\ConversationRate',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -180,7 +180,7 @@ class CurrencyApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -188,7 +188,7 @@ class CurrencyApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -196,7 +196,7 @@ class CurrencyApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -204,7 +204,7 @@ class CurrencyApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -212,7 +212,7 @@ class CurrencyApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -220,7 +220,7 @@ class CurrencyApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -235,8 +235,8 @@ class CurrencyApi
      *
      * Get currencies exchange rate.
      *
-     * @param  \Swagger\Client\Model\Currency $from (required)
-     * @param  \Swagger\Client\Model\Currency $to (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $from (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $to (required)
      * @param  \DateTime $date (optional)
      *
      * @throws \InvalidArgumentException
@@ -257,8 +257,8 @@ class CurrencyApi
      *
      * Get currencies exchange rate.
      *
-     * @param  \Swagger\Client\Model\Currency $from (required)
-     * @param  \Swagger\Client\Model\Currency $to (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $from (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $to (required)
      * @param  \DateTime $date (optional)
      *
      * @throws \InvalidArgumentException
@@ -266,7 +266,7 @@ class CurrencyApi
      */
     public function getConversionRateAsyncWithHttpInfo($from, $to, $date = null)
     {
-        $returnType = '\Swagger\Client\Model\ConversationRate';
+        $returnType = '\BillingoClientAPIv3\Client\Model\ConversationRate';
         $request = $this->getConversionRateRequest($from, $to, $date);
 
         return $this->client
@@ -309,8 +309,8 @@ class CurrencyApi
     /**
      * Create request for operation 'getConversionRate'
      *
-     * @param  \Swagger\Client\Model\Currency $from (required)
-     * @param  \Swagger\Client\Model\Currency $to (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $from (required)
+     * @param  \BillingoClientAPIv3\Client\Model\Currency $to (required)
      * @param  \DateTime $date (optional)
      *
      * @throws \InvalidArgumentException

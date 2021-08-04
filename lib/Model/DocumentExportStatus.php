@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * DocumentExportStatus Class Doc Comment
@@ -57,7 +57,7 @@ class DocumentExportStatus implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'string',
-'state' => '\Swagger\Client\Model\DocumentExportStatusState',
+'state' => '\BillingoClientAPIv3\Client\Model\DocumentExportStatusState',
 'message' => 'string'    ];
 
     /**
@@ -235,7 +235,7 @@ class DocumentExportStatus implements ModelInterface, ArrayAccess
     /**
      * Gets state
      *
-     * @return \Swagger\Client\Model\DocumentExportStatusState
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportStatusState
      */
     public function getState()
     {
@@ -245,7 +245,7 @@ class DocumentExportStatus implements ModelInterface, ArrayAccess
     /**
      * Sets state
      *
-     * @param \Swagger\Client\Model\DocumentExportStatusState $state state
+     * @param \BillingoClientAPIv3\Client\Model\DocumentExportStatusState $state state
      *
      * @return $this
      */

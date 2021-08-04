@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * BankAccount Class Doc Comment
@@ -61,7 +61,7 @@ class BankAccount implements ModelInterface, ArrayAccess
 'account_number' => 'string',
 'account_number_iban' => 'string',
 'swift' => 'string',
-'currency' => '\Swagger\Client\Model\Currency',
+'currency' => '\BillingoClientAPIv3\Client\Model\Currency',
 'need_qr' => 'bool'    ];
 
     /**
@@ -364,7 +364,7 @@ class BankAccount implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \BillingoClientAPIv3\Client\Model\Currency
      */
     public function getCurrency()
     {
@@ -374,7 +374,7 @@ class BankAccount implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \BillingoClientAPIv3\Client\Model\Currency $currency currency
      *
      * @return $this
      */

@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace BillingoClientAPIv3\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,7 +33,7 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\Configuration;
 use Swagger\Client\HeaderSelector;
 use Swagger\Client\ObjectSerializer;
@@ -91,11 +91,11 @@ class BankAccountApi
      *
      * Create a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\BankAccount
+     * @return \BillingoClientAPIv3\Client\Model\BankAccount
      */
     public function createBankAccount($body)
     {
@@ -108,15 +108,15 @@ class BankAccountApi
      *
      * Create a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\BankAccount, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\BankAccount, HTTP status code, HTTP response headers (array of strings)
      */
     public function createBankAccountWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\BankAccount';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccount';
         $request = $this->createBankAccountRequest($body);
 
         try {
@@ -168,7 +168,7 @@ class BankAccountApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BankAccount',
+                        '\BillingoClientAPIv3\Client\Model\BankAccount',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class BankAccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class BankAccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -192,7 +192,7 @@ class BankAccountApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -200,7 +200,7 @@ class BankAccountApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -208,7 +208,7 @@ class BankAccountApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -216,7 +216,7 @@ class BankAccountApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class BankAccountApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class BankAccountApi
      *
      * Create a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -259,14 +259,14 @@ class BankAccountApi
      *
      * Create a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createBankAccountAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\BankAccount';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccount';
         $request = $this->createBankAccountRequest($body);
 
         return $this->client
@@ -309,7 +309,7 @@ class BankAccountApi
     /**
      * Create request for operation 'createBankAccount'
      *
-     * @param  \Swagger\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body BankAccount object that you would like to store. (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -411,7 +411,7 @@ class BankAccountApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -427,7 +427,7 @@ class BankAccountApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -471,7 +471,7 @@ class BankAccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -479,7 +479,7 @@ class BankAccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -487,7 +487,7 @@ class BankAccountApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -495,7 +495,7 @@ class BankAccountApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -503,7 +503,7 @@ class BankAccountApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -511,7 +511,7 @@ class BankAccountApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -519,7 +519,7 @@ class BankAccountApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -697,9 +697,9 @@ class BankAccountApi
      *
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\BankAccount
+     * @return \BillingoClientAPIv3\Client\Model\BankAccount
      */
     public function getBankAccount($id)
     {
@@ -714,13 +714,13 @@ class BankAccountApi
      *
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\BankAccount, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\BankAccount, HTTP status code, HTTP response headers (array of strings)
      */
     public function getBankAccountWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\BankAccount';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccount';
         $request = $this->getBankAccountRequest($id);
 
         try {
@@ -772,7 +772,7 @@ class BankAccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BankAccount',
+                        '\BillingoClientAPIv3\Client\Model\BankAccount',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -780,7 +780,7 @@ class BankAccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -788,7 +788,7 @@ class BankAccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -796,7 +796,7 @@ class BankAccountApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -804,7 +804,7 @@ class BankAccountApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -812,7 +812,7 @@ class BankAccountApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -820,7 +820,7 @@ class BankAccountApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -828,7 +828,7 @@ class BankAccountApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -870,7 +870,7 @@ class BankAccountApi
      */
     public function getBankAccountAsyncWithHttpInfo($id)
     {
-        $returnType = '\Swagger\Client\Model\BankAccount';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccount';
         $request = $this->getBankAccountRequest($id);
 
         return $this->client
@@ -1021,9 +1021,9 @@ class BankAccountApi
      * @param  int $page page (optional)
      * @param  int $per_page per_page (optional, default to 25)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\BankAccountList
+     * @return \BillingoClientAPIv3\Client\Model\BankAccountList
      */
     public function listBankAccount($page = null, $per_page = '25')
     {
@@ -1039,13 +1039,13 @@ class BankAccountApi
      * @param  int $page (optional)
      * @param  int $per_page (optional, default to 25)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\BankAccountList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\BankAccountList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listBankAccountWithHttpInfo($page = null, $per_page = '25')
     {
-        $returnType = '\Swagger\Client\Model\BankAccountList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccountList';
         $request = $this->listBankAccountRequest($page, $per_page);
 
         try {
@@ -1097,7 +1097,7 @@ class BankAccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BankAccountList',
+                        '\BillingoClientAPIv3\Client\Model\BankAccountList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1105,7 +1105,7 @@ class BankAccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1113,7 +1113,7 @@ class BankAccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1121,7 +1121,7 @@ class BankAccountApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1129,7 +1129,7 @@ class BankAccountApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1137,7 +1137,7 @@ class BankAccountApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1145,7 +1145,7 @@ class BankAccountApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1189,7 +1189,7 @@ class BankAccountApi
      */
     public function listBankAccountAsyncWithHttpInfo($page = null, $per_page = '25')
     {
-        $returnType = '\Swagger\Client\Model\BankAccountList';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccountList';
         $request = $this->listBankAccountRequest($page, $per_page);
 
         return $this->client
@@ -1332,12 +1332,12 @@ class BankAccountApi
      *
      * Update a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
      * @param  int $id id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\BankAccount
+     * @return \BillingoClientAPIv3\Client\Model\BankAccount
      */
     public function updateBankAccount($body, $id)
     {
@@ -1350,16 +1350,16 @@ class BankAccountApi
      *
      * Update a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
      * @param  int $id (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \BillingoClientAPIv3\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\BankAccount, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BillingoClientAPIv3\Client\Model\BankAccount, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateBankAccountWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\BankAccount';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccount';
         $request = $this->updateBankAccountRequest($body, $id);
 
         try {
@@ -1411,7 +1411,7 @@ class BankAccountApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\BankAccount',
+                        '\BillingoClientAPIv3\Client\Model\BankAccount',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1419,7 +1419,7 @@ class BankAccountApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1427,7 +1427,7 @@ class BankAccountApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1435,7 +1435,7 @@ class BankAccountApi
                 case 402:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\SubscriptionErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\SubscriptionErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1443,7 +1443,7 @@ class BankAccountApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1451,7 +1451,7 @@ class BankAccountApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ClientErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ClientErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1459,7 +1459,7 @@ class BankAccountApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ValidationErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ValidationErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1467,7 +1467,7 @@ class BankAccountApi
                 case 429:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\TooManyRequestsResponse',
+                        '\BillingoClientAPIv3\Client\Model\TooManyRequestsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1475,7 +1475,7 @@ class BankAccountApi
                 case 500:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ServerErrorResponse',
+                        '\BillingoClientAPIv3\Client\Model\ServerErrorResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1490,7 +1490,7 @@ class BankAccountApi
      *
      * Update a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1511,7 +1511,7 @@ class BankAccountApi
      *
      * Update a bank account
      *
-     * @param  \Swagger\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException
@@ -1519,7 +1519,7 @@ class BankAccountApi
      */
     public function updateBankAccountAsyncWithHttpInfo($body, $id)
     {
-        $returnType = '\Swagger\Client\Model\BankAccount';
+        $returnType = '\BillingoClientAPIv3\Client\Model\BankAccount';
         $request = $this->updateBankAccountRequest($body, $id);
 
         return $this->client
@@ -1562,7 +1562,7 @@ class BankAccountApi
     /**
      * Create request for operation 'updateBankAccount'
      *
-     * @param  \Swagger\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
+     * @param  \BillingoClientAPIv3\Client\Model\BankAccount $body Bank account object that you would like to update. (required)
      * @param  int $id (required)
      *
      * @throws \InvalidArgumentException

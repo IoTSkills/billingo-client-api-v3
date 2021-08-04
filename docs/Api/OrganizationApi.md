@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**getOrganizationData**](OrganizationApi.md#getorganizationdata) | **GET** /organization | Retrieve a organization data.
 
 # **getOrganizationData**
-> \Swagger\Client\Model\OrganizationData getOrganizationData()
+> \BillingoClientAPIv3\Client\Model\OrganizationData getOrganizationData()
 
 Retrieve a organization data.
 
@@ -22,7 +22,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\OrganizationApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\OrganizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Swagger\Client\Model\OrganizationData**](../Model/OrganizationData.md)
+[**\BillingoClientAPIv3\Client\Model\OrganizationData**](../Model/OrganizationData.md)
 
 ### Authorization
 

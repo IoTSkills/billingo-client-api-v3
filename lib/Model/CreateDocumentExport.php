@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * CreateDocumentExport Class Doc Comment
@@ -56,19 +56,19 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'query_type' => '\Swagger\Client\Model\DocumentExportQueryType',
+        'query_type' => '\BillingoClientAPIv3\Client\Model\DocumentExportQueryType',
 'start_date' => '\DateTime',
 'end_date' => '\DateTime',
 'document_block_id' => 'int',
-'export_type' => '\Swagger\Client\Model\DocumentExportType',
+'export_type' => '\BillingoClientAPIv3\Client\Model\DocumentExportType',
 'number_start_year' => 'int',
 'number_start_sequence' => 'int',
 'number_end_year' => 'int',
 'number_end_sequence' => 'int',
-'payment_method' => '\Swagger\Client\Model\PaymentMethod',
-'sort_by' => '\Swagger\Client\Model\DocumentExportSortBy',
-'other_options' => '\Swagger\Client\Model\DocumentExportOtherOptions',
-'filter_extra' => '\Swagger\Client\Model\DocumentExportFilterExtra'    ];
+'payment_method' => '\BillingoClientAPIv3\Client\Model\PaymentMethod',
+'sort_by' => '\BillingoClientAPIv3\Client\Model\DocumentExportSortBy',
+'other_options' => '\BillingoClientAPIv3\Client\Model\DocumentExportOtherOptions',
+'filter_extra' => '\BillingoClientAPIv3\Client\Model\DocumentExportFilterExtra'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -283,7 +283,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Gets query_type
      *
-     * @return \Swagger\Client\Model\DocumentExportQueryType
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportQueryType
      */
     public function getQueryType()
     {
@@ -293,7 +293,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Sets query_type
      *
-     * @param \Swagger\Client\Model\DocumentExportQueryType $query_type query_type
+     * @param \BillingoClientAPIv3\Client\Model\DocumentExportQueryType $query_type query_type
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Gets export_type
      *
-     * @return \Swagger\Client\Model\DocumentExportType
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportType
      */
     public function getExportType()
     {
@@ -389,7 +389,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Sets export_type
      *
-     * @param \Swagger\Client\Model\DocumentExportType $export_type export_type
+     * @param \BillingoClientAPIv3\Client\Model\DocumentExportType $export_type export_type
      *
      * @return $this
      */
@@ -499,7 +499,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \BillingoClientAPIv3\Client\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -509,7 +509,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -523,7 +523,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Gets sort_by
      *
-     * @return \Swagger\Client\Model\DocumentExportSortBy
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportSortBy
      */
     public function getSortBy()
     {
@@ -533,7 +533,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Sets sort_by
      *
-     * @param \Swagger\Client\Model\DocumentExportSortBy $sort_by sort_by
+     * @param \BillingoClientAPIv3\Client\Model\DocumentExportSortBy $sort_by sort_by
      *
      * @return $this
      */
@@ -547,7 +547,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Gets other_options
      *
-     * @return \Swagger\Client\Model\DocumentExportOtherOptions
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportOtherOptions
      */
     public function getOtherOptions()
     {
@@ -557,7 +557,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Sets other_options
      *
-     * @param \Swagger\Client\Model\DocumentExportOtherOptions $other_options other_options
+     * @param \BillingoClientAPIv3\Client\Model\DocumentExportOtherOptions $other_options other_options
      *
      * @return $this
      */
@@ -571,7 +571,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Gets filter_extra
      *
-     * @return \Swagger\Client\Model\DocumentExportFilterExtra
+     * @return \BillingoClientAPIv3\Client\Model\DocumentExportFilterExtra
      */
     public function getFilterExtra()
     {
@@ -581,7 +581,7 @@ class CreateDocumentExport implements ModelInterface, ArrayAccess
     /**
      * Sets filter_extra
      *
-     * @param \Swagger\Client\Model\DocumentExportFilterExtra $filter_extra filter_extra
+     * @param \BillingoClientAPIv3\Client\Model\DocumentExportFilterExtra $filter_extra filter_extra
      *
      * @return $this
      */

@@ -28,7 +28,7 @@
 namespace IoTSkills\BillingoClientAPIv3;
 
 use Swagger\Client\Configuration;
-use Swagger\Client\ApiException;
+use BillingoClientAPIv3\Client\ApiException;
 use Swagger\Client\ObjectSerializer;
 
 /**

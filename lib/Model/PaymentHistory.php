@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * PaymentHistory Class Doc Comment
@@ -58,7 +58,7 @@ class PaymentHistory implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'date' => '\DateTime',
 'price' => 'float',
-'payment_method' => '\Swagger\Client\Model\PaymentMethod',
+'payment_method' => '\BillingoClientAPIv3\Client\Model\PaymentMethod',
 'voucher_number' => 'string',
 'conversion_rate' => 'float'    ];
 
@@ -280,7 +280,7 @@ class PaymentHistory implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \BillingoClientAPIv3\Client\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -290,7 +290,7 @@ class PaymentHistory implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * DocumentPartner Class Doc Comment
@@ -58,14 +58,14 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
 'name' => 'string',
-'address' => '\Swagger\Client\Model\Address',
+'address' => '\BillingoClientAPIv3\Client\Model\Address',
 'emails' => 'string[]',
 'taxcode' => 'string',
 'iban' => 'string',
 'swift' => 'string',
 'account_number' => 'string',
 'phone' => 'string',
-'tax_type' => '\Swagger\Client\Model\PartnerTaxType'    ];
+'tax_type' => '\BillingoClientAPIv3\Client\Model\PartnerTaxType'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -301,7 +301,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \BillingoClientAPIv3\Client\Model\Address
      */
     public function getAddress()
     {
@@ -311,7 +311,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \BillingoClientAPIv3\Client\Model\Address $address address
      *
      * @return $this
      */
@@ -469,7 +469,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Gets tax_type
      *
-     * @return \Swagger\Client\Model\PartnerTaxType
+     * @return \BillingoClientAPIv3\Client\Model\PartnerTaxType
      */
     public function getTaxType()
     {
@@ -479,7 +479,7 @@ class DocumentPartner implements ModelInterface, ArrayAccess
     /**
      * Sets tax_type
      *
-     * @param \Swagger\Client\Model\PartnerTaxType $tax_type tax_type
+     * @param \BillingoClientAPIv3\Client\Model\PartnerTaxType $tax_type tax_type
      *
      * @return $this
      */

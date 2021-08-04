@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * DocumentInsert Class Doc Comment
@@ -61,18 +61,18 @@ class DocumentInsert implements ModelInterface, ArrayAccess
 'partner_id' => 'int',
 'block_id' => 'int',
 'bank_account_id' => 'int',
-'type' => '\Swagger\Client\Model\DocumentInsertType',
+'type' => '\BillingoClientAPIv3\Client\Model\DocumentInsertType',
 'fulfillment_date' => '\DateTime',
 'due_date' => '\DateTime',
-'payment_method' => '\Swagger\Client\Model\PaymentMethod',
-'language' => '\Swagger\Client\Model\DocumentLanguage',
-'currency' => '\Swagger\Client\Model\Currency',
+'payment_method' => '\BillingoClientAPIv3\Client\Model\PaymentMethod',
+'language' => '\BillingoClientAPIv3\Client\Model\DocumentLanguage',
+'currency' => '\BillingoClientAPIv3\Client\Model\Currency',
 'conversion_rate' => 'float',
 'electronic' => 'bool',
 'paid' => 'bool',
-'items' => '\Swagger\Client\Model\OneOfDocumentInsertItemsItems[]',
+'items' => '\BillingoClientAPIv3\Client\Model\OneOfDocumentInsertItemsItems[]',
 'comment' => 'string',
-'settings' => '\Swagger\Client\Model\DocumentSettings',
+'settings' => '\BillingoClientAPIv3\Client\Model\DocumentSettings',
 'advance_invoice' => 'int[]'    ];
 
     /**
@@ -445,7 +445,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets type
      *
-     * @return \Swagger\Client\Model\DocumentInsertType
+     * @return \BillingoClientAPIv3\Client\Model\DocumentInsertType
      */
     public function getType()
     {
@@ -455,7 +455,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets type
      *
-     * @param \Swagger\Client\Model\DocumentInsertType $type type
+     * @param \BillingoClientAPIv3\Client\Model\DocumentInsertType $type type
      *
      * @return $this
      */
@@ -517,7 +517,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \BillingoClientAPIv3\Client\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -527,7 +527,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -541,7 +541,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets language
      *
-     * @return \Swagger\Client\Model\DocumentLanguage
+     * @return \BillingoClientAPIv3\Client\Model\DocumentLanguage
      */
     public function getLanguage()
     {
@@ -551,7 +551,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets language
      *
-     * @param \Swagger\Client\Model\DocumentLanguage $language language
+     * @param \BillingoClientAPIv3\Client\Model\DocumentLanguage $language language
      *
      * @return $this
      */
@@ -565,7 +565,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets currency
      *
-     * @return \Swagger\Client\Model\Currency
+     * @return \BillingoClientAPIv3\Client\Model\Currency
      */
     public function getCurrency()
     {
@@ -575,7 +575,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets currency
      *
-     * @param \Swagger\Client\Model\Currency $currency currency
+     * @param \BillingoClientAPIv3\Client\Model\Currency $currency currency
      *
      * @return $this
      */
@@ -661,7 +661,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\OneOfDocumentInsertItemsItems[]
+     * @return \BillingoClientAPIv3\Client\Model\OneOfDocumentInsertItemsItems[]
      */
     public function getItems()
     {
@@ -671,7 +671,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\OneOfDocumentInsertItemsItems[] $items items
+     * @param \BillingoClientAPIv3\Client\Model\OneOfDocumentInsertItemsItems[] $items items
      *
      * @return $this
      */
@@ -709,7 +709,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets settings
      *
-     * @return \Swagger\Client\Model\DocumentSettings
+     * @return \BillingoClientAPIv3\Client\Model\DocumentSettings
      */
     public function getSettings()
     {
@@ -719,7 +719,7 @@ class DocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets settings
      *
-     * @param \Swagger\Client\Model\DocumentSettings $settings settings
+     * @param \BillingoClientAPIv3\Client\Model\DocumentSettings $settings settings
      *
      * @return $this
      */

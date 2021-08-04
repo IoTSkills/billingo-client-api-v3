@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * PartnerUpsert Class Doc Comment
@@ -57,7 +57,7 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-'address' => '\Swagger\Client\Model\Address',
+'address' => '\BillingoClientAPIv3\Client\Model\Address',
 'emails' => 'string[]',
 'taxcode' => 'string',
 'iban' => 'string',
@@ -65,8 +65,8 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
 'account_number' => 'string',
 'phone' => 'string',
 'general_ledger_number' => 'string',
-'tax_type' => '\Swagger\Client\Model\PartnerTaxType',
-'custom_billing_settings' => '\Swagger\Client\Model\PartnerCustomBillingSettings',
+'tax_type' => '\BillingoClientAPIv3\Client\Model\PartnerTaxType',
+'custom_billing_settings' => '\BillingoClientAPIv3\Client\Model\PartnerCustomBillingSettings',
 'group_member_tax_number' => 'string'    ];
 
     /**
@@ -295,7 +295,7 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \BillingoClientAPIv3\Client\Model\Address
      */
     public function getAddress()
     {
@@ -305,7 +305,7 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \BillingoClientAPIv3\Client\Model\Address $address address
      *
      * @return $this
      */
@@ -487,7 +487,7 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
     /**
      * Gets tax_type
      *
-     * @return \Swagger\Client\Model\PartnerTaxType
+     * @return \BillingoClientAPIv3\Client\Model\PartnerTaxType
      */
     public function getTaxType()
     {
@@ -497,7 +497,7 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
     /**
      * Sets tax_type
      *
-     * @param \Swagger\Client\Model\PartnerTaxType $tax_type tax_type
+     * @param \BillingoClientAPIv3\Client\Model\PartnerTaxType $tax_type tax_type
      *
      * @return $this
      */
@@ -511,7 +511,7 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
     /**
      * Gets custom_billing_settings
      *
-     * @return \Swagger\Client\Model\PartnerCustomBillingSettings
+     * @return \BillingoClientAPIv3\Client\Model\PartnerCustomBillingSettings
      */
     public function getCustomBillingSettings()
     {
@@ -521,7 +521,7 @@ class PartnerUpsert implements ModelInterface, ArrayAccess
     /**
      * Sets custom_billing_settings
      *
-     * @param \Swagger\Client\Model\PartnerCustomBillingSettings $custom_billing_settings custom_billing_settings
+     * @param \BillingoClientAPIv3\Client\Model\PartnerCustomBillingSettings $custom_billing_settings custom_billing_settings
      *
      * @return $this
      */

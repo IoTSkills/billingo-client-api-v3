@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * ModificationDocumentInsert Class Doc Comment
@@ -58,9 +58,9 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'due_date' => '\DateTime',
 'comment' => 'string',
-'payment_method' => '\Swagger\Client\Model\PaymentMethod',
+'payment_method' => '\BillingoClientAPIv3\Client\Model\PaymentMethod',
 'without_financial_fulfillment' => 'bool',
-'items' => '\Swagger\Client\Model\OneOfModificationDocumentInsertItemsItems[]'    ];
+'items' => '\BillingoClientAPIv3\Client\Model\OneOfModificationDocumentInsertItemsItems[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -271,7 +271,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets payment_method
      *
-     * @return \Swagger\Client\Model\PaymentMethod
+     * @return \BillingoClientAPIv3\Client\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -281,7 +281,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets payment_method
      *
-     * @param \Swagger\Client\Model\PaymentMethod $payment_method payment_method
+     * @param \BillingoClientAPIv3\Client\Model\PaymentMethod $payment_method payment_method
      *
      * @return $this
      */
@@ -319,7 +319,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\OneOfModificationDocumentInsertItemsItems[]
+     * @return \BillingoClientAPIv3\Client\Model\OneOfModificationDocumentInsertItemsItems[]
      */
     public function getItems()
     {
@@ -329,7 +329,7 @@ class ModificationDocumentInsert implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\OneOfModificationDocumentInsertItemsItems[] $items items
+     * @param \BillingoClientAPIv3\Client\Model\OneOfModificationDocumentInsertItemsItems[] $items items
      *
      * @return $this
      */

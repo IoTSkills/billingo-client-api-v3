@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * SpendingPartner Class Doc Comment
@@ -59,7 +59,7 @@ class SpendingPartner implements ModelInterface, ArrayAccess
         'id' => 'int',
 'name' => 'string',
 'tax_code' => 'string',
-'address' => '\Swagger\Client\Model\Address'    ];
+'address' => '\BillingoClientAPIv3\Client\Model\Address'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -289,7 +289,7 @@ class SpendingPartner implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Swagger\Client\Model\Address
+     * @return \BillingoClientAPIv3\Client\Model\Address
      */
     public function getAddress()
     {
@@ -299,7 +299,7 @@ class SpendingPartner implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Swagger\Client\Model\Address $address address
+     * @param \BillingoClientAPIv3\Client\Model\Address $address address
      *
      * @return $this
      */

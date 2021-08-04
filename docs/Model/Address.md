@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**country_code** | [**\Swagger\Client\Model\Country**](Country.md) |  | 
+**country_code** | [**\BillingoClientAPIv3\Client\Model\Country**](Country.md) |  | 
 **post_code** | **string** |  | 
 **city** | **string** |  | 
 **address** | **string** |  | 

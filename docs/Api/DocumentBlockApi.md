@@ -7,7 +7,7 @@ Method | HTTP request | Description
 [**listDocumentBlock**](DocumentBlockApi.md#listdocumentblock) | **GET** /document-blocks | List all document blocks
 
 # **listDocumentBlock**
-> \Swagger\Client\Model\DocumentBlockList listDocumentBlock($page, $per_page)
+> \BillingoClientAPIv3\Client\Model\DocumentBlockList listDocumentBlock($page, $per_page)
 
 List all document blocks
 
@@ -22,7 +22,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\DocumentBlockApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\DocumentBlockApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\DocumentBlockList**](../Model/DocumentBlockList.md)
+[**\BillingoClientAPIv3\Client\Model\DocumentBlockList**](../Model/DocumentBlockList.md)
 
 ### Authorization
 

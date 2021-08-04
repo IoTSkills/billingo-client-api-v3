@@ -26,7 +26,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SpendingApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\SpendingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -64,7 +64,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spendingList**
-> \Swagger\Client\Model\SpendingList spendingList($page, $per_page)
+> \BillingoClientAPIv3\Client\Model\SpendingList spendingList($page, $per_page)
 
 Lists all spending
 
@@ -79,7 +79,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SpendingApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\SpendingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\SpendingList**](../Model/SpendingList.md)
+[**\BillingoClientAPIv3\Client\Model\SpendingList**](../Model/SpendingList.md)
 
 ### Authorization
 
@@ -120,7 +120,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spendingSave**
-> \Swagger\Client\Model\Spending spendingSave($body)
+> \BillingoClientAPIv3\Client\Model\Spending spendingSave($body)
 
 Creates a new spending.
 
@@ -133,13 +133,13 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SpendingApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\SpendingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$body = new \Swagger\Client\Model\SpendingSave(); // \Swagger\Client\Model\SpendingSave | 
+$body = new \BillingoClientAPIv3\Client\Model\SpendingSave(); // \BillingoClientAPIv3\Client\Model\SpendingSave | 
 
 try {
     $result = $apiInstance->spendingSave($body);
@@ -154,11 +154,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional]
+ **body** | [**\BillingoClientAPIv3\Client\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Spending**](../Model/Spending.md)
+[**\BillingoClientAPIv3\Client\Model\Spending**](../Model/Spending.md)
 
 ### Authorization
 
@@ -172,7 +172,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spendingShow**
-> \Swagger\Client\Model\Spending spendingShow($id)
+> \BillingoClientAPIv3\Client\Model\Spending spendingShow($id)
 
 Retrieves one specific spending.
 
@@ -187,7 +187,7 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SpendingApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\SpendingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Spending**](../Model/Spending.md)
+[**\BillingoClientAPIv3\Client\Model\Spending**](../Model/Spending.md)
 
 ### Authorization
 
@@ -226,7 +226,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **spendingUpdate**
-> \Swagger\Client\Model\Spending spendingUpdate($id, $body)
+> \BillingoClientAPIv3\Client\Model\Spending spendingUpdate($id, $body)
 
 Updates a spending item.
 
@@ -241,14 +241,14 @@ $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
 // $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\SpendingApi(
+$apiInstance = new BillingoClientAPIv3\Client\Api\SpendingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $id = 56; // int | 
-$body = new \Swagger\Client\Model\SpendingSave(); // \Swagger\Client\Model\SpendingSave | 
+$body = new \BillingoClientAPIv3\Client\Model\SpendingSave(); // \BillingoClientAPIv3\Client\Model\SpendingSave | 
 
 try {
     $result = $apiInstance->spendingUpdate($id, $body);
@@ -264,11 +264,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **body** | [**\Swagger\Client\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional]
+ **body** | [**\BillingoClientAPIv3\Client\Model\SpendingSave**](../Model/SpendingSave.md)|  | [optional]
 
 ### Return type
 
-[**\Swagger\Client\Model\Spending**](../Model/Spending.md)
+[**\BillingoClientAPIv3\Client\Model\Spending**](../Model/Spending.md)
 
 ### Authorization
 

@@ -26,10 +26,10 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace BillingoClientAPIv3\Client\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * OnlineSzamlaStatus Class Doc Comment
@@ -58,7 +58,7 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'transaction_id' => 'string',
 'status' => 'string',
-'messages' => '\Swagger\Client\Model\OnlineSzamlaStatusMessage[]'    ];
+'messages' => '\BillingoClientAPIv3\Client\Model\OnlineSzamlaStatusMessage[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -259,7 +259,7 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \Swagger\Client\Model\OnlineSzamlaStatusMessage[]
+     * @return \BillingoClientAPIv3\Client\Model\OnlineSzamlaStatusMessage[]
      */
     public function getMessages()
     {
@@ -269,7 +269,7 @@ class OnlineSzamlaStatus implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \Swagger\Client\Model\OnlineSzamlaStatusMessage[] $messages messages
+     * @param \BillingoClientAPIv3\Client\Model\OnlineSzamlaStatusMessage[] $messages messages
      *
      * @return $this
      */
