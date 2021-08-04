@@ -34,9 +34,9 @@ use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
 use BillingoClientAPIv3\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use BillingoClientAPIv3\Client\Configuration;
+use BillingoClientAPIv3\Client\HeaderSelector;
+use BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * SpendingApi Class Doc Comment

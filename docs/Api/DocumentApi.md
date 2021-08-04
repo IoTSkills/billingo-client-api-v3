@@ -1,4 +1,4 @@
-# Swagger\Client\DocumentApi
+# BillingoClientAPIv3\Client\DocumentApi
 
 All URIs are relative to *https://api.billingo.hu/v3*
 
@@ -34,9 +34,9 @@ Archive an existing proforma document.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -87,9 +87,9 @@ Cancel a document. Returns a cancellation document object if the cancellation is
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -141,9 +141,9 @@ Create a new document. Returns a document object if the create is succeded.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -195,9 +195,9 @@ Create a new document from proforma. Returns a document object if the create is 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -249,9 +249,9 @@ Create a modification document for the given document. Returns a new document ob
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -305,9 +305,9 @@ Delete an existing draft.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -358,9 +358,9 @@ Delete all exist payment history on document.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -412,9 +412,9 @@ Copy a document. Returns the new document if the copy was succeded.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -466,9 +466,9 @@ Download a document. Returns a document in PDF format.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -520,9 +520,9 @@ Retrieves the details of an existing document.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -574,9 +574,9 @@ Retrieves the details of an existing document status.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -628,9 +628,9 @@ Retrieves the details of payment history an existing document.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -682,9 +682,9 @@ Retrieves public url to download an existing document.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -736,9 +736,9 @@ Returns a list of your documents. The documents are returned sorted by creation 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -814,9 +814,9 @@ Returns a printable POS PDF file of a particular document.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -870,9 +870,9 @@ Returns a list of emails, where the invoice is sent.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -926,9 +926,9 @@ Update payment history an existing document. Returns a payment history object if
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\DocumentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.

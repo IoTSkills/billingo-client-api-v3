@@ -27,9 +27,9 @@
 
 namespace IoTSkills\BillingoClientAPIv3;
 
-use Swagger\Client\Configuration;
+use BillingoClientAPIv3\Client\Configuration;
 use BillingoClientAPIv3\Client\ApiException;
-use Swagger\Client\ObjectSerializer;
+use BillingoClientAPIv3\Client\ObjectSerializer;
 
 /**
  * BankAccountApiTest Class Doc Comment

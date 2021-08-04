@@ -1,4 +1,4 @@
-# Swagger\Client\OrganizationApi
+# BillingoClientAPIv3\Client\OrganizationApi
 
 All URIs are relative to *https://api.billingo.hu/v3*
 
@@ -18,9 +18,9 @@ Retrieves the data of organization.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\OrganizationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.

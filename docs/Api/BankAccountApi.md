@@ -1,4 +1,4 @@
-# Swagger\Client\BankAccountApi
+# BillingoClientAPIv3\Client\BankAccountApi
 
 All URIs are relative to *https://api.billingo.hu/v3*
 
@@ -22,9 +22,9 @@ Create a new bank account. Returns a bank account object if the create is succed
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -76,9 +76,9 @@ Delete an existing bank account.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -129,9 +129,9 @@ Retrieves the details of an existing bank account.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -183,9 +183,9 @@ Returns a list of your bank accounts. The bank accounts are returned sorted by c
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
@@ -239,9 +239,9 @@ Update an existing bank accounts. Returns a bank account object if the update is
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 // Configure API key authorization: api_key
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
+$config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKey('X-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
+// $config = BillingoClientAPIv3\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-API-KEY', 'Bearer');
 
 $apiInstance = new BillingoClientAPIv3\Client\Api\BankAccountApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
